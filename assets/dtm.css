@@ -29,6 +29,14 @@ nav {
 
 }
 
+.navbar-brand {
+  position: absolute;
+  display: block;
+  left: 12%;
+  top: -7px; /* Navbar yüksekliği ile ilgili ayarlarsın, vh de kullanabilirsin */
+  /*transform: translate(50%, 8%); bu da bir yöntem, ekrana göre ortalama vs. kısmında işine yarar */
+}
+
 nav ul {
   list-style: none;
   text-align: center;
@@ -138,13 +146,6 @@ a:hover {
 
 ul li ul li a {
   transition: all 0.5s ease;
-}
-
-#logo {
-  float: left;
-  position: inherit;
-  margin: left 70px;
-
 }
 
 /* NAVBAR HOVER STUFF END */
