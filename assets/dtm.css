@@ -1,10 +1,10 @@
 body {
-  background-color: #ccc;
-  
+  background-color: #e9e9e9;
+
 }
 
 #navbarat {
-  background: #de0000;
+  background: #f53240;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   padding: 0;
@@ -33,7 +33,8 @@ nav {
   position: absolute;
   display: block;
   left: 12%;
-  top: -7px; /* Navbar yüksekliği ile ilgili ayarlarsın, vh de kullanabilirsin */
+  top: -7px;
+  /* Navbar yüksekliği ile ilgili ayarlarsın, vh de kullanabilirsin */
   /*transform: translate(50%, 8%); bu da bir yöntem, ekrana göre ortalama vs. kısmında işine yarar */
 }
 
@@ -87,7 +88,7 @@ nav.blend ul li a:after {
   height: 100%;
   top: 0;
   bottom: 0;
-  background: #de0000;
+  background: #f53240;
   transition: all .5s;
   margin: auto;
   content: '.';
@@ -126,7 +127,7 @@ nav.blend ul li ul:hover {
   min-width: 250px;
   text-align: center;
   padding-top: 20px;
-  box-shadow: 0px 3px 5px 0px #ccc;
+  box-shadow: 0px 3px 5px 0px #e9e9e9;
 }
 
 nav.blend ul li ul li {
@@ -141,19 +142,20 @@ nav.blend ul li ul li {
 /*nav.blend ul li ul li a {} */
 
 a:hover {
-  color: #de0000;
+  color: #f53240;
 }
 
 ul li ul li a {
   transition: all 0.5s ease;
 }
 
+
 /* NAVBAR HOVER STUFF END */
 
 /*CARD HOVER*/
 #cards_landscape_wrap-2 {
   text-align: center;
-  background: #ccc;
+  background: #e9e9e9;
 }
 
 #cards_landscape_wrap-2 .container {
@@ -199,7 +201,8 @@ ul li ul li a {
 
 #cards_landscape_wrap-2 .card-flyer .text-box {
   text-align: center;
-  font-family: sans-serif; /* didn't test this yet */
+  font-family: sans-serif;
+  /* didn't test this yet */
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container {
@@ -235,16 +238,17 @@ ul li ul li a {
   font-size: 14px;
   letter-spacing: 1px;
   color: #000000;
-  font-family: sans-serif; /* didn't test this yet */
+  font-family: sans-serif;
+  /* didn't test this yet */
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box p a {
-  color: #de0000;
+  color: #f53240;
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box p a:hover {
   font-weight: bold;
-  border-bottom: 1px solid #de0000;
+  border-bottom: 1px solid #f53240;
 
 }
 
@@ -256,7 +260,7 @@ ul li ul li a {
   text-transform: uppercase;
   font-family: 'Roboto Black', sans-serif;
   letter-spacing: 1px;
-  color: #de0000;
+  color: #f53240;
 }
 
 
@@ -281,7 +285,7 @@ ul li ul li a {
   height: 30px !important;
   line-height: 21px !important;
   font-size: 20px !important;
-  font-family: 'Open Sans', 'Arial Narrow', Arial,sans-serif !important;
+  font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif !important;
   padding: 5px 20px;
   position: relative;
   z-index: 20;
@@ -306,8 +310,6 @@ ul li ul li a {
   line-height: 20px;
 }
 
-
-
 .ac-container label:hover {
   background: #97979779;
 }
@@ -315,7 +317,7 @@ ul li ul li a {
 .ac-container input:checked+label,
 .ac-container input:checked+label:hover {
   background: #97979779;
-  color: #de0000;
+  color: #f53240;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 30px;
@@ -421,7 +423,6 @@ ul li ul li a {
 .cards-inner {
   padding-bottom: 20px;
   padding-top: 20px;
-
 }
 
 .cards-inner img {
@@ -432,7 +433,6 @@ ul li ul li a {
 
 #sidecardbutton {
   font-size: medium;
-
 }
 
 #sidecardbutton:hover {
@@ -462,7 +462,6 @@ ul li ul li a {
 
 #maintext p {
   font-size: 16px;
-  text-shadow: 1px 1px 1px rgba(68, 68, 68, 0.3)
 }
 
 #maintext ul {
@@ -511,7 +510,7 @@ ul li ul li a {
 }
 
 #phonenmbr p {
-  color: #de0000;
+  color: #f53240;
   font-family: sans-serif;
   font-size: 28px;
   text-align: center;
@@ -530,85 +529,413 @@ ul li ul li a {
 
 /* PARALLAX & PHONE ICON END */
 /* RESPONSIVE IMG GALLERY FOR PRODUCTS PAGE START */
-figure {
-  margin: 0;
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: 100%;
+  }
+
+  98% {
+    left: 100%;
+  }
+
+  99% {
+    left: 0;
+  }
 }
-figcaption {
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  98% {
+    left: -300%;
+  }
+
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+
+  97% {
+    scroll-snap-align: none;
+  }
+
+  99% {
+    scroll-snap-align: none;
+  }
+
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+.productscatalog {
+  max-width: 50rem;
+  margin: 3.5rem auto;
+  padding: 0 1.25rem;
   font-family: sans-serif;
-  font-size: 0.8em;
-  color: rgb(0, 0, 0);
-  line-height: 1.4;
-  padding-left: 20px;
-  padding-bottom: 10px;
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+  scrollbar-width: 0px;
 }
-.grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 90%;
-  grid-gap: 1em;
+
+.productscatalog ::-webkit-scrollbar {
+  width: 0;
+}
+
+.productscatalog ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.productscatalog ::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+.productscatalog {
+  -ms-overflow-style: none;
+}
+
+
+.productscatalog ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
   overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding: 2em 1em;
-  
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
-@media all and (min-width: 400px) { /* change this pixel when photos arrive */
-  .grid {
-    grid-auto-flow: initial;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 20em));
-    justify-content: center;
- }
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
 }
-.grid__figure {
-  display: grid;
-  grid-template-rows: 15em 1fr;
-  grid-gap: 1em;
+
+.carousel__slide:nth-child(even) {
+  background-color: rgb(0, 0, 0);
 }
-.grid__figure img {
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  scroll-snap-align: center;
 }
 
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
-#productgallery {margin: 0;
-padding-top: 30px;
-padding-bottom: 50px;
-}
-#productgallery ul{list-style: none;
-  margin: 0;
-  padding: 0;}
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
 
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+#carousel_slide1_1 {
+  background-image: url("https://picsum.photos/1200/600");
+}
+
+#carousel_slide1_2 {
+  background-image: url("https://picsum.photos/800/600");
+}
+
+#carousel_slide1_3 {
+  background-image: url("https://picsum.photos/900/600");
+}
+
+#carousel_slide1_4 {
+  background-image: url("https://picsum.photos/600/600");
+}
+
+#carousel_slide1_5 {
+  background-image: url("https://picsum.photos/1000/600");
+}
+
+#carousel_slide2_1 {
+  background-image: url("https://picsum.photos/1200/800");
+}
+
+#carousel_slide2_2 {
+  background-image: url("https://picsum.photos/800/800");
+}
+
+#carousel_slide2_3 {
+  background-image: url("https://picsum.photos/900/800");
+}
+
+#carousel_slide2_4 {
+  background-image: url("https://picsum.photos/600/800");
+}
+
+#carousel_slide2_5 {
+  background-image: url("https://picsum.photos/1000/800");
+}
+
+#carousel_slide3_1 {
+  background-image: url("https://picsum.photos/1200/1000");
+}
+
+#carousel_slide3_2 {
+  background-image: url("https://picsum.photos/800/1000");
+}
+
+#carousel_slide3_3 {
+  background-image: url("https://picsum.photos/900/1000");
+}
+
+#carousel_slide3_4 {
+  background-image: url("https://picsum.photos/600/1000");
+}
+
+#carousel_slide3_5 {
+  background-image: url("https://picsum.photos/1000/1000");
+}
+
+#carousel_slide4_1 {
+  background-image: url("https://picsum.photos/1200/1000");
+}
+
+#carousel_slide4_2 {
+  background-image: url("https://picsum.photos/800/1000");
+}
+
+#carousel_slide4_3 {
+  background-image: url("https://picsum.photos/900/1000");
+}
+
+#carousel_slide4_4 {
+  background-image: url("https://picsum.photos/600/1000");
+}
+
+#carousel_slide4_5 {
+  background-image: url("https://picsum.photos/1000/1000");
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #0000007c;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: .5rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: .5rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 10;
+  background-color: #0000007c;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* RESPONSIVE IMG GALLERY FOR PRODUCTS PAGE END */
+
+/*PRODUCTS PAGE TOP*/
+#exphead {
+  padding-top: 3%;
+  padding-left: 4%;
+  color: rgb(255, 255, 255);
+}
+
+#exppar {
+  padding-left: 4%;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  padding-bottom: 3%;
+}
+
+.productshead {
+  background-image: url("https://picsum.photos/1920/1080");
+}
+
+.btn-cata {
+  margin-left: 5%;
+}
+
+.btn-cata:hover {
+  background-color: #cc0000;
+  font-weight: 600;
+}
+
+.linebreak {
+  margin-top: 10rem;
+}
+
+/* PRODUCTS PAGE TOP END */
 /*SCROLLBAR*/
-body::-webkit-scrollbar{width: 12px;
-	background-color: #F5F5F5;}
-body::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;}
-body::-webkit-scrollbar-thumb {	border-radius: 10px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;}
-ul::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 12px;
-	background-color: #ccc;}
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+ul::-webkit-scrollbar {
+  width: 12px;
+  background-color: #e9e9e9;
+}
+
 ul::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    background-color: #ccc;}
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #e9e9e9;
+}
+
 ul::-webkit-scrollbar-thumb {
-  	border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #555;}
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
 /*SCROLLBAR END */
 
 /* FOOTER */
 
-footer {background-color: #585858;
-font-family:sans-serif;
-font-size: 12px;
-color: rgba(255, 255, 255, 0.5);}
+footer {
+  background-color: #cdcdcd;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
 
-#footerfooter {background-color: rgb(66, 66, 66);}
-#icons a:hover {color: #fff;}
+#footerfooter {
+  background-color: #cdcdcd;
+}
+
+#icons a:hover {
+  color: rgb(0, 0, 0,0.5);
+}
+
+/* REFERANSLAR */
+
