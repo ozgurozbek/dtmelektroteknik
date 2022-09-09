@@ -939,3 +939,15 @@ footer {
 
 /* REFERANSLAR */
 
+#references .card {box-shadow: none;
+margin: 1rem;
+width: 10rem;
+height: 10rem;}
+#references .card:hover{
+  box-shadow: 0 5px 5px #000000;}
+#references .card .content {font-family: sans-serif;}
+#references .card .content h3 {font-size: medium;
+text-align: center;
+padding: auto;}
+#references .card .image {text-align: center;
+padding-top: 10px;}
