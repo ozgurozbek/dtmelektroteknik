@@ -21,18 +21,17 @@ body {
 } */
 
 /* NAVIGATION */
-nav {
-  width: 80%;
+nav.blend {
+  width: 100%;
   margin: 0 auto;
   background: #fff;
   padding-top: 30px;
-
 }
 
 .navbar-brand {
   position: absolute;
   display: block;
-  left: 12%;
+  left: 4%;
   top: -7px;
   /* Navbar yüksekliği ile ilgili ayarlarsın, vh de kullanabilirsin */
   /*transform: translate(50%, 8%); bu da bir yöntem, ekrana göre ortalama vs. kısmında işine yarar */
@@ -41,6 +40,7 @@ nav {
 nav ul {
   list-style: none;
   text-align: center;
+  
 }
 
 nav ul li {
