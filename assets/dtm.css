@@ -33,15 +33,12 @@ transition: all 0.3s ease-in-out;
 background-color: #f53240;}
 
 
-
 /* NAVIGATION */
 nav {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   background: #fff;
   padding-top: 30px;
-  z-index: 3;
-  position: fixed;
 }
 
 .navbar-brand {
@@ -55,9 +52,7 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  text-align: center;
 }
 
 nav ul li {
