@@ -10,7 +10,7 @@ ul {
 #navbarat {
   background: #f53240;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -48,7 +48,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  
+
   /* not sure */
 }
 
@@ -204,7 +204,7 @@ ul li ul li a {
 
 #cards_landscape_wrap-2 .card-flyer .text-box {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   /* didn't test this yet */
 }
 
@@ -241,7 +241,7 @@ ul li ul li a {
   font-size: 14px;
   letter-spacing: 1px;
   color: #000000;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   /* didn't test this yet */
 }
 
@@ -261,7 +261,7 @@ ul li ul li a {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Roboto Black', sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   color: #f53240;
 }
@@ -288,7 +288,7 @@ ul li ul li a {
   height: 30px !important;
   line-height: 21px !important;
   font-size: 20px !important;
-  font-family: 'Open Sans', 'Arial Narrow', Arial, sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   padding: 5px 20px;
   position: relative;
   z-index: 20;
@@ -296,7 +296,6 @@ ul li ul li a {
   height: 30px;
   cursor: pointer;
   color: rgb(0, 0, 0);
-  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);*/
   line-height: 33px;
   font-size: 19px;
   background: #fff;
@@ -321,7 +320,7 @@ ul li ul li a {
 .ac-container input:checked+label:hover {
   background: #97979779;
   color: #f53240;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 30px;
   line-height: 21px;
@@ -368,7 +367,7 @@ ul li ul li a {
   line-height: 30px;
   font-size: 16px;
   padding: 20px;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+ 
   font: normal normal 16px sans-serif;
 }
 
@@ -410,7 +409,7 @@ ul li ul li a {
   transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
   padding: 14px 20px 14px 20px;
   margin-top: 60px;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .cards:hover {
@@ -453,7 +452,7 @@ ul li ul li a {
   box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
   padding-top: 20px;
   padding-left: 20px;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 100px;
 }
 
@@ -501,7 +500,7 @@ ul li ul li a {
   scale: 1.5;
   padding-top: 160px;
   padding-bottom: auto;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .parallax p {
@@ -509,7 +508,7 @@ ul li ul li a {
   margin-top: 60px;
   text-align: center;
   scale: 1.5;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 #phonenmbr {
@@ -518,7 +517,7 @@ ul li ul li a {
 
 #phonenmbr p {
   color: #f53240;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 28px;
   text-align: center;
   padding-top: 20px;
@@ -527,6 +526,7 @@ ul li ul li a {
 
 #phonenmbr h3 {
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -621,7 +621,7 @@ ul::-webkit-scrollbar-thumb {
 
 footer {
   background-color: #cdcdcd;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -648,13 +648,14 @@ footer {
 }
 
 #references .card .content {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 #references .card .content h3 {
   font-size: medium;
   text-align: center;
   padding: auto;
+  font-family: 'Lato', sans-serif;
 }
 
 #references .card .image {
@@ -668,8 +669,12 @@ footer {
   width: 100%;
   border: 0;
 }
-#adresses {padding-top: 4rem;
+
+#adresses {
+  font-family: 'Lato', sans-serif;
+  padding-top: 4rem;
 }
+
 #adresses h2 {
   text-align: center;
 }
@@ -679,7 +684,7 @@ footer {
 }
 
 #adresses p {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 #adresses a {
