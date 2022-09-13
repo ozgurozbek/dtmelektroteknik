@@ -2,7 +2,10 @@ body {
   background-color: #e9e9e9;
 
 }
-ul {list-style: none;}
+
+ul {
+  list-style: none;
+}
 
 #navbarat {
   background: #f53240;
@@ -479,6 +482,10 @@ ul li ul li a {
   background-image: url("https://www.wallpaperbetter.com/wallpaper/489/691/756/shanghai-china-night-city-buildings-skyscrapers-lights-1080P-wallpaper-middle-size.jpg");
 }
 
+#iletisim {
+  background-image: url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-600w-1605128917.jpg");
+}
+
 .parallax {
 
   min-height: 500px;
@@ -522,6 +529,7 @@ ul li ul li a {
   text-align: center;
 }
 
+
 #phonenmbr a {
   text-decoration: none;
   text-align: center;
@@ -529,9 +537,14 @@ ul li ul li a {
 
 /* PARALLAX & PHONE ICON END */
 /* RESPONSIVE IMG GALLERY FOR PRODUCTS PAGE START */
-.carousel-inner {padding-top: 6rem;
-  padding-left: 5rem;}
-.carousel-indicators {padding-left: 5rem;}
+.carousel-inner {
+  padding-top: 6rem;
+  padding-left: 5rem;
+}
+
+.carousel-indicators {
+  padding-left: 5rem;
+}
 
 /* RESPONSIVE IMG GALLERY FOR PRODUCTS PAGE END */
 
@@ -618,24 +631,56 @@ footer {
 }
 
 #icons a:hover {
-  color: rgb(0, 0, 0,0.5);
+  color: rgb(0, 0, 0, 0.5);
 }
 
 /* REFERANSLAR */
 
-#references .card {box-shadow: none;
-margin: 1rem;
-width: 10rem;
-height: 10rem;}
-#references .card:hover{
-  box-shadow: 0 5px 5px #000000;}
-#references .card .content {font-family: sans-serif;}
-#references .card .content h3 {font-size: medium;
-text-align: center;
-padding: auto;}
-#references .card .image {text-align: center;
-padding-top: 10px;}
+#references .card {
+  box-shadow: none;
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#references .card:hover {
+  box-shadow: 0 5px 5px #000000;
+}
+
+#references .card .content {
+  font-family: sans-serif;
+}
+
+#references .card .content h3 {
+  font-size: medium;
+  text-align: center;
+  padding: auto;
+}
+
+#references .card .image {
+  text-align: center;
+  padding-top: 10px;
+}
 
 /* ILETISIM */
 
-.maploc iframe {width: 100%;}
+.maploc iframe {
+  width: 100%;
+  border: 0;
+}
+#adresses {padding-top: 4rem;}
+#adresses h2 {
+  text-align: center;
+}
+
+#adresses h4 {
+  text-align: center;
+}
+
+#adresses p {
+  font-family: sans-serif;
+}
+
+#adresses a {
+  color: #ff0000;
+}
