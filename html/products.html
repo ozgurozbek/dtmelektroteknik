@@ -15,6 +15,31 @@
 </head>
 
 <body>
+  <section class="sticky-top" id="navbarat">
+    <a class="navbar-brand" id="logo" href="#">
+      <img src="..\assets\img\dtm-logo.png" alt="logo">
+    </a>
+    <nav class="blend">
+      
+      <ul>
+        <li><a href="mainpage.html">ANA SAYFA</a></li>
+        <li><a href="kurumsal.html">KURUMSAL</a></li>
+        <li><a href="products.html">ÜRÜNLER</a>
+          <ul class="dropdown">
+            <li><a href="./products.html#product1">AB-E AYDINLATMA BUSBAR (25A-63A)</a></li>
+            <li><a href="./products.html#product2">SP-H ALÇAK GÜÇ BUSBAR (100A-160A)</a></li>
+            <li><a href="./products.html#product3">MP-H ORTA GÜÇ BUSBAR (160A-600A)</a></li>
+            <li><a href="./products.html#product4">HP-K YÜKSEK GÜÇ BUSBAR (400A-6300A)</a></li>
+          </ul>
+        </li>
+        <li><a href="hizmetler.html">HİZMETLER</a></li>
+        <li><a href="referanslar.html">REFERANSLAR</a></li>
+        <li><a href="iletisim.html">İLETİŞİM</a></li>
+        <li><a href="haberler.html">HABERLER</a></li>
+        <li class="" id=""><a href="#">ENGLISH</a></li>
+      </ul>
+    </nav>
+  </section>
     <div class="productshead">
         <h2 id="exphead">ÜRÜNLER</h2><br><p id="exppar">Busbar Kanal Sistemleri</p>
         </div>
@@ -47,82 +72,32 @@
                     <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
             </div>
             <div class="col-sm-12  col-md-6">
-                <div class="productscatalog">
-                    <section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                      <li id="carousel_slide1_1"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper">
-                          <a href="#carousel_slide1_5"
-                             class="carousel__prev">Go to last slide</a>
-                          <a href="#carousel_slide1_2"
-                             class="carousel__next">Go to next slide</a>
-                        </div>
-                      </li>
-                      <li id="carousel_slide1_2"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide1_1"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide1_3"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide1_3"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide1_2"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide1_4"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide1_4"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide1_3"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide1_5"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                      <li id="carousel_slide1_5"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide1_4"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide1_1"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                      <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide1_1"
-                             class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide1_2"
-                             class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide1_3"
-                             class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide1_4"
-                             class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel_slide1_5"
-                               class="carousel__navigation-button">Go to slide 5</a>
-                          </li>
-                      </ol>
-                    </aside>
-                  </section>
+              <div id="product1slides" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#product1slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#product1slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#product1slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#product1slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#product1slides" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/600" class="d-block w-100" alt="">
                   </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/500" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -158,82 +133,32 @@
                     <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
             </div>
             <div class="col-sm-12  col-md-6 ">
-                <div class="productscatalog">
-                    <section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                      <li id="carousel_slide2_1"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper">
-                          <a href="#carousel_slide2_5"
-                             class="carousel__prev">Go to last slide</a>
-                          <a href="#carousel_slide2_2"
-                             class="carousel__next">Go to next slide</a>
-                        </div>
-                      </li>
-                      <li id="carousel_slide2_2"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide2_1"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide2_3"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide2_3"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide2_2"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide2_4"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide2_4"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide2_3"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide2_5"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                      <li id="carousel_slide2_5"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide2_4"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide2_1"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                      <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide2_1"
-                             class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide2_2"
-                             class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide2_3"
-                             class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide2_4"
-                             class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel_slide2_5"
-                               class="carousel__navigation-button">Go to slide 5</a>
-                          </li>
-                      </ol>
-                    </aside>
-                  </section>
+              <div id="product2slides" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#product2slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#product2slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#product2slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#product2slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#product2slides" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/600" class="d-block w-100" alt="">
                   </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/500" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -266,82 +191,32 @@
                     <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
             </div>
             <div class="col-sm-12  col-md-6 ">
-                <div class="productscatalog">
-                    <section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                      <li id="carousel_slide3_1"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper">
-                          <a href="#carousel_slide3_5"
-                             class="carousel__prev">Go to last slide</a>
-                          <a href="#carousel_slide3_2"
-                             class="carousel__next">Go to next slide</a>
-                        </div>
-                      </li>
-                      <li id="carousel_slide3_2"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide3_1"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide3_3"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide3_3"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide3_2"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide3_4"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide3_4"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide3_3"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide3_5"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                      <li id="carousel_slide3_5"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide3_4"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide3_1"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                      <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide3_1"
-                             class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide3_2"
-                             class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide3_3"
-                             class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide3_4"
-                             class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel_slide3_5"
-                               class="carousel__navigation-button">Go to slide 5</a>
-                          </li>
-                      </ol>
-                    </aside>
-                  </section>
+              <div id="product3slides" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#product3slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#product3slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#product3slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#product3slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#product3slides" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/600" class="d-block w-100" alt="">
                   </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/500" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                </div>
+              </div>  
             </div>
         </div>
     </div>
@@ -379,82 +254,32 @@
                     <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
             </div>
             <div class="col-sm-12  col-md-6 ">
-                <div class="productscatalog">
-                    <section class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                      <li id="carousel_slide4_1"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper">
-                          <a href="#carousel_slide4_5"
-                             class="carousel__prev">Go to last slide</a>
-                          <a href="#carousel_slide4_2"
-                             class="carousel__next">Go to next slide</a>
-                        </div>
-                      </li>
-                      <li id="carousel_slide4_2"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide4_1"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide4_3"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide4_3"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide4_2"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide4_4"
-                           class="carousel__next">Go to next slide</a>
-                      </li>
-                      <li id="carousel_slide4_4"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide4_3"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide4_5"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                      <li id="carousel_slide4_5"
-                          tabindex="0"
-                          class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel_slide4_4"
-                           class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel_slide4_1"
-                           class="carousel__next">Go to first slide</a>
-                      </li>
-                    </ol>
-                    <aside class="carousel__navigation">
-                      <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide4_1"
-                             class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide4_2"
-                             class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide4_3"
-                             class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                          <a href="#carousel_slide4_4"
-                             class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel_slide4_5"
-                               class="carousel__navigation-button">Go to slide 5</a>
-                          </li>
-                      </ol>
-                    </aside>
-                  </section>
+              <div id="product4slides" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#product4slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#product4slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#product4slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#product4slides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#product4slides" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://picsum.photos/600" class="d-block w-100" alt="">
                   </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/500" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://picsum.photos/400" class="d-block w-100" alt="">
+                  </div>
+                </div>
+              </div>  
             </div>
         </div>
     </div>
