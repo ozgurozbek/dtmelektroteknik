@@ -48,7 +48,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  align-self: center;
+  
   /* not sure */
 }
 
@@ -668,7 +668,8 @@ footer {
   width: 100%;
   border: 0;
 }
-#adresses {padding-top: 4rem;}
+#adresses {padding-top: 4rem;
+}
 #adresses h2 {
   text-align: center;
 }
