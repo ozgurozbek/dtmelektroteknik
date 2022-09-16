@@ -26,6 +26,11 @@ def page_referanslar():
 def page_iletisim():
     return render_template('iletisim.html')
 
+@app.route("/haberler")
+def page_haberler():
+    return render_template('haberler.html')
+
+
 
 if __name__ == "__main__":
     app.run()
