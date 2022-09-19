@@ -1,3 +1,4 @@
+from distutils.util import change_root
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -30,7 +31,19 @@ def page_iletisim():
 def page_haberler():
     return render_template('haberler.html')
 
+  ###  if session.lang==eng
+    #return render_template('mainpage.html',eng)
+    #else if session.lang==tr  
+    #return render_template('mainpage.html',tr)
+    #else return 404 
+    #    get.english():
 
+    #if 'turkish' in session:
+     #   language = session['turkish']
+      #  return render_template('mainpage.html')
+    #else if 'english' in session:
+     #   language = session['english']
+      #  return render_template('mainpage.html')
 
 if __name__ == "__main__":
     app.run()
