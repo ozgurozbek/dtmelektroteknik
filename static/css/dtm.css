@@ -22,6 +22,46 @@ ul {
   color: inherit;
   padding: 50px;
 } */
+/* HERO */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/heroicbg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  display: block;
+  width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 3px solid white; 
+  border-radius: 20px;
+  background-color:  #f5323f94;
+}
+  .hero .btn:hover {
+    font-weight: 600;
+    scale: 1.2;
+  }
 
 /* NAVIGATION */
 nav.blend {
@@ -684,12 +724,14 @@ footer {
 
 .carousel-item img {
   object-fit: cover;
-  
-}
-#fade .carousel-inner {
-  padding: 50px 0px 0px 0px;}
 
-#fade h5{
+}
+
+#fade .carousel-inner {
+  padding: 50px 0px 0px 0px;
+}
+
+#fade h5 {
   padding-top: 15px;
   text-align: center;
 }
