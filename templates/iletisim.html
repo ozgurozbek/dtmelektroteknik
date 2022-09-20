@@ -15,14 +15,14 @@
     </div>
     <div class="container">
         <div class="row justify-content-around">
-            <form action="mailto:batuhann.sahinn99@gmail.com" method="post" class="col-lg-8">
+            <form action="/send_mail" method="post" class="col-lg-8">
                 <label for="name">AD SOYAD</label><br>
                 <input type="text" id="name" name="name"><br>
 
                 <label for="YourMessage">
                     MESAJINIZ
                 </label><br>
-                <textarea id="YourMessage" rows="10" cols="100"></textarea>
+                <textarea id="YourMessage" name="yourmsg" rows="10" cols="100"></textarea>
                 <input type="submit" value="send">
             </form>
             <div id="adresses" class="card col-lg-4">

@@ -11,7 +11,8 @@
   <section class="hero">
     <div class="hero-inner">
         <h1>DTM Elektroteknik A.Ş.</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+        <h2>{{ translation[1] }}</h2>
+        <h2>{{ translation[2] }}</h2>
         <div class="row">
           <div class="col">
             <a href="/kurumsal" class="btn">Hakkımızda</a>
@@ -45,7 +46,8 @@
       <li><a href="/referanslar">REFERANSLAR</a></li>
       <li><a href="/iletisim">İLETİŞİM</a></li>
       <li><a href="">HABERLER</a></li>
-      <li class="" id=""><a href="#">ENGLISH</a></li>
+      <li class="" id=""><form action="/set_lang" method="post"><input style="display: none;" type="text" name="langval" value="1"><button type="submit" style="color: black;">ENGLISH</button></form></li>
+      <li class="" id=""><form action="/set_lang" method="post"><input style="display: none;" type="text" name="langval" value="0"><button type="submit" style="color: black;">TURKISH</button></form></li>
     </ul>
   </nav>
 </section>

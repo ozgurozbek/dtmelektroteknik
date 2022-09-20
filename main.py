@@ -1,11 +1,49 @@
-from distutils.util import change_root
-from flask import Flask, render_template, request
+from flask import Flask, render_template, session, request, redirect, url_for
 
 app = Flask(__name__)
+app.secret_key = 'random string'
+
+translations = [
+    ["tur","anasayfa","kurumsal"],
+    ["eng","homepage","corporate"]
+]
+
+# 0: Tur, 1: Eng
+@app.route('/set_lang', methods = ['POST'])
+def set_lang():
+    if request.method == 'POST':
+        session["language"] = int(request.form['langval']) # make eng -> eng returns a '1'
+    return redirect(url_for('root'))
+
+def get_lang():
+    try:
+        if 'language' not in session:  # if session does not contain a language variable, if it exists no need to manually re-add it on else.
+            session["language"] = 1
+        
+        # hideous code - refactor
+        if session['language'] == 0:
+            return 0
+        elif session['language'] == 1:
+            return 1
+        else:
+            return 1 # failsafe for other languages, if need be.
+    except Exception as e:
+        print(e)
+
+@app.route('/send_mail', methods = ['POST'])
+def send_mail():
+    try:
+        if request.method == 'POST':
+            your_message = request.form['yourmsg']
+            # try açıp mail at burada
+        return redirect(url_for('page_iletisim', stt = "Success!", bg = "#00FF00")) # BUNLAR KALMAYACAK - MAILER POST YAP
+    except Exception as e:
+        return redirect(url_for('page_iletisim', stt = e, bg = "#FF3300")) # BUNLAR KALMAYACAK - MAILER POST YAP
 
 @app.route("/")
 def root():
-    return render_template('mainpage.html')
+    lang_id = get_lang()
+    return render_template('mainpage.html', translation = translations[lang_id])
     
 @app.route("/kurumsal")
 def page_kurumsal():
@@ -30,20 +68,6 @@ def page_iletisim():
 @app.route("/haberler")
 def page_haberler():
     return render_template('haberler.html')
-
-  ###  if session.lang==eng
-    #return render_template('mainpage.html',eng)
-    #else if session.lang==tr  
-    #return render_template('mainpage.html',tr)
-    #else return 404 
-    #    get.english():
-
-    #if 'turkish' in session:
-     #   language = session['turkish']
-      #  return render_template('mainpage.html')
-    #else if 'english' in session:
-     #   language = session['english']
-      #  return render_template('mainpage.html')
 
 if __name__ == "__main__":
     app.run()
