@@ -1,5 +1,6 @@
 body {
   background-color: #e9e9e9;
+  overflow-x: hidden;
 }
 
 ul {
@@ -13,6 +14,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 
 /* #navbarat h2 {
   text-align: center;
@@ -30,8 +32,8 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/heroicbg.png);
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/heroicbg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -54,14 +56,16 @@ ul {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
-  border: 3px solid white; 
+  border: 3px solid white;
   border-radius: 20px;
-  background-color:  #f5323f94;
+  background-color: #f5323f94;
 }
-  .hero .btn:hover {
-    font-weight: 600;
-    scale: 1.2;
-  }
+
+.hero .btn:hover {
+  font-weight: 600;
+  scale: 1.2;
+  background-color: #f53240;
+}
 
 /* NAVIGATION */
 nav.blend {
@@ -330,13 +334,12 @@ ul li ul li a {
   line-height: 33px;
   font-size: 19px;
   background: #fff;
-  background: -moz-linear-gradient(top, #fff 1%, #eaeaea 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), color-stop(100%, #eaeaea));
-  background: -webkit-linear-gradient(top, #fff 1%, #eaeaea 100%);
-  background: -o-linear-gradient(top, #fff 1%, #eaeaea 100%);
-  background: -ms-linear-gradient(top, #fff 1%, #eaeaea 100%);
-  background: linear-gradient(top, #fff 1%, #eaeaea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea', GradientType=0);
+  background: -moz-linear-gradient(top, #eaeaea);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #eaeaea));
+  background: -webkit-linear-gradient(top, #eaeaea);
+  background: -o-linear-gradient(top, #eaeaea);
+  background: -ms-linear-gradient(top, #eaeaea);
+  background: linear-gradient(top, #eaeaea);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 1px 0 0 rgba(255, 255, 255, 0.9) inset, 0 2px 2px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   height: 30px;
@@ -610,6 +613,19 @@ ul li ul li a {
   margin-top: 10rem;
 }
 
+#productdisplay #product1,
+#productdisplay #product2,
+#productdisplay #product3,
+#productdisplay #product4 {
+  height: 100vh;
+}
+
+#productdisplay .carousel-item img {align-self: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 /* PRODUCTS PAGE TOP END */
 /*SCROLLBAR*/
 body::-webkit-scrollbar {
@@ -651,18 +667,18 @@ ul::-webkit-scrollbar-thumb {
 /* FOOTER */
 
 footer {
-  background-color: #cdcdcd;
+  background-color: #504c4c;
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 #footerfooter {
-  background-color: #cdcdcd;
+  background-color: #504c4c;
 }
-
+#icons a {color: rgb(0, 0, 0, 0.5);}
 #icons a:hover {
-  color: rgb(0, 0, 0, 0.5);
+  scale: 1.1;
 }
 
 /* REFERANSLAR */
