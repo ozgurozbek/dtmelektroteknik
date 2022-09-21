@@ -47,27 +47,33 @@ def root():
     
 @app.route("/kurumsal")
 def page_kurumsal():
-    return render_template('kurumsal.html')
+    lang_id = get_lang()
+    return render_template('kurumsal.html', translation = translations[lang_id])
 
 @app.route("/products")
 def page_products():
-    return render_template('products.html')
+    lang_id = get_lang()
+    return render_template('products.html', translation = translations[lang_id])
 
 @app.route("/hizmetler")
 def page_hizmetler():
-    return render_template('hizmetler.html')
+    lang_id = get_lang()
+    return render_template('hizmetler.html', translation = translations[lang_id])
 
 @app.route("/referanslar")
 def page_referanslar():
-    return render_template('referanslar.html')
+    lang_id = get_lang()
+    return render_template('referanslar.html', translation = translations[lang_id])
 
 @app.route("/iletisim")
 def page_iletisim():
-    return render_template('iletisim.html')
+    lang_id = get_lang()
+    return render_template('iletisim.html', translation = translations[lang_id])
 
 @app.route("/haberler")
 def page_haberler():
-    return render_template('haberler.html')
+    lang_id = get_lang()
+    return render_template('haberler.html', translation = translations[lang_id])
 
 if __name__ == "__main__":
     app.run()
