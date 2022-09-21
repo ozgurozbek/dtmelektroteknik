@@ -752,3 +752,18 @@ footer {
   padding-top: 15px;
   text-align: center;
 }
+
+/* SERTIFIKALAR */
+.cert1 {
+  height:auto; 
+  border-radius:10px; 
+  text-align:center; 
+  margin-top: calc(4%+15px);
+}
+.cert2 {
+  margin-top: 4%;
+}
+.cert2 h3 {
+  margin-left:15px; 
+  border-bottom: 1px solid #ccc;
+}

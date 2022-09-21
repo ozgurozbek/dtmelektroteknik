@@ -70,6 +70,11 @@ def page_iletisim():
     lang_id = get_lang()
     return render_template('iletisim.html', translation = translations[lang_id])
 
+@app.route("/sertifikalar")
+def page_sertifikalar():
+    lang_id = get_lang()
+    return render_template('sertifikalar.html', translation = translations[lang_id])
+
 @app.route("/haberler")
 def page_haberler():
     lang_id = get_lang()
