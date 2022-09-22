@@ -94,7 +94,7 @@ a:hover {
  .logo {
   font-size: 32px;
   z-index: 7;
-
+  padding-left: 2rem;
  }
  .menu {
   display: flex;
@@ -692,9 +692,13 @@ footer {
 
 #references .card .image {
   text-align: center;
-  padding-top: 10px;
-}
+  padding-top: 1rem;
 
+}
+#references .card .image img{
+  max-width: 8rem;
+  max-height: 8rem;
+}
 /* ILETISIM */
 
 .maploc iframe {
