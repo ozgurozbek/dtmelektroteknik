@@ -62,13 +62,13 @@ a:hover {
   font-size: 1.5em;
   border: 3px solid white;
   border-radius: 20px;
-  background-color: #f5323f94;
+  background-color: #80192091;
 }
 
 .hero .btn:hover {
   font-weight: 600;
   scale: 1.2;
-  background-color: #f53240;
+  background-color: #801920;
 }
 
 /* NAVIGATION */
@@ -84,15 +84,16 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f53240;
-  color: #fff;
+  background-color: #F5F5F5;
+  color: #FA5F55;
  }
  .nav-links a {
-  color: #fff;
+  color: #FA5F55;
  }
  /* LOGO */
  .logo {
   font-size: 32px;
+  z-index: 7;
  }
  /* NAVBAR MENU */
  .menu {
@@ -113,7 +114,7 @@ a:hover {
   position: relative; 
  }
  .dropdown {
-  background-color: #f53240;
+  background-color: #F5F5F5;
   padding: 0;
   position: absolute; /*WITH RESPECT TO PARENT*/
   display: none;
@@ -125,8 +126,8 @@ a:hover {
   padding: 0.5em;
   width: 16em;
   text-align: center;
-
  }
+
  .dropdown li:hover {
   background-color: #801920;
  }
@@ -143,15 +144,14 @@ a:hover {
   user-select: none;
  }
  /* APPLYING MEDIA QUERIES */
- @media (max-width: 768px) {
+ @media (max-width: 1334px) {
  .menu { 
   display:none;
   position: absolute;
-  background-color:#f53240;
+  background-color:#F5F5F5;
   right: 0;
   left: 0;
   text-align: center;
-  padding: 16px 0;
  }
  .menu li:hover {
   display: inline-block;
