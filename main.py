@@ -80,5 +80,7 @@ def page_haberler():
     lang_id = get_lang()
     return render_template('haberler.html', translation = translations[lang_id])
 
+
+  
 if __name__ == "__main__":
     app.run()
