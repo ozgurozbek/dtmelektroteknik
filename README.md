@@ -4,7 +4,7 @@ This is the new and actively maintained DTMELEKTROTEKNIK website.
 
 ## Maintainer
 
-@god-hephaestus
+[god-hephaestus](https://github.com/god-hephaestus/)
 
 ## Rights
 
