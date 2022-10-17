@@ -3,15 +3,23 @@
 
 <head>
     {% include 'HEAD.html' %}
-    <title>Hizmetler | DTM ELEKTROTEKNİK A.Ş. </title>
+    <title>{{ translation[12] }} | {{ translation[17] }} </title>
 </head>
 
 <body>
     {% include 'nav.html' %}
     <div class="">
         <div id="hizmetler" class="parallax">
-            <h1>HİZMETLER</h1>
-            <p>Müşteri Memnuniyeti Bizim İçin Önemlidir.</p>
+            <h1>{% if session['language'] == 0 %}
+                HİZMETLER
+                {% else %}
+                SERVICES
+                {% endif %}</h1>
+            <p>{% if session['language'] == 0 %}
+                Müşteri memnuniyeti bizim için önemlidir.
+                {% else %}
+                The customer is important to us.
+                {% endif %}</p>
         </div>
     </div>
 
@@ -21,17 +29,18 @@
         <div class="row justify-content-around">
             <div id="maintext" class="col-md-7 col-sm-12">
                 <h3>
+                {% if session['language'] == 0 %}
                     HİZMET KALİTESİ
+                {% else %}
+                    SERVICE QUALITY
+                {% endif %}
                 </h3>
                 <p>
                     <br><br>Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş
-                    için
-                    çok
-                    önemlidir. <br><br>
+                    için çok önemlidir. <br><br>
 
                     Eksiksiz müşteri hizmetleri, DTM ürünlerinin vazgeçilmez bir tamamlayıcısıdır. Ürün kalitesi ile
-                    sunulan
-                    hizmet kalitesi toplam kaliteyi oluşturmaktadır.<br><br>
+                    sunulan hizmet kalitesi toplam kaliteyi oluşturmaktadır.<br><br>
 
                     DTM Elektroteknik A.Ş 'nin hizmet anlayışı yalnızca malın satışıyla sınırlı kalmayıp proje ve
                     uygulama
@@ -54,7 +63,7 @@
                     <div class="cards-inner ">
                         <img src="../static/img/dtm-hizmetler.jpg" alt="">
                     </div>
-                    <h3 class="align-self-center">REFERANSLAR</h3>
+                    <h3 class="align-self-center text-uppercase">{{ translation[13] }}</h3>
                     <p>Örnek referanslarımızı inceleyiniz. Detaylı bilgi için lütfen bizi arayınız.</p>
                     <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">Referanslar</button>
                 </div>
