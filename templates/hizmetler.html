@@ -29,13 +29,14 @@
         <div class="row justify-content-around">
             <div id="maintext" class="col-md-7 col-sm-12">
                 <h3>
-                {% if session['language'] == 0 %}
+                    {% if session['language'] == 0 %}
                     HİZMET KALİTESİ
-                {% else %}
+                    {% else %}
                     SERVICE QUALITY
-                {% endif %}
+                    {% endif %}
                 </h3>
                 <p>
+                    {% if session['language'] == 0 %}
                     <br><br>Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş
                     için çok önemlidir. <br><br>
 
@@ -49,13 +50,34 @@
                     servis desteği vererek kullanıcıların gereksinimlerine en uygun yanıtları verebiliyor ve satın
                     aldıkları
                     ürünlerden maksimum yararlanabilmelerini sağlıyor olmasıdır. <br><br>
+                    {% else %}
+
+                    <br><br>It is very important for DTM Electrotechnical Inc. to provide pre-sales and after-sales
+                    services at an excellent level. <br><br>
+
+                    Complete customer service is an indispensable complement to DTM products. The product quality and
+                    the service quality provided constitute the total quality.<br><br>
+                    The service concept of DTM Elektroteknik A.Ş is not only limited to the sale of the goods, but also
+                    covers the project and application stages, another important point is that DTM can give the most
+                    appropriate answers to the needs of the users by providing personalized or corporate service support
+                    and enable them to make maximum use of the products they buy.
+                    {% endif %}
+
                 </p>
                 <ul>
+                    {% if session['language'] == 0 %}
                     <b>DTM Elektroteknik A.Ş. tarafından sunulan hizmetler;</b>
                     <li>Satış öncesi / sonrası mühendislik hizmetleri</li>
                     <li>Uygulama Projelerinin Hazırlanması</li>
                     <li>Montaj Süpervizyonu</li>
                     <li>Kısa teslimat süreleri</li>
+                    {% else %}
+                    <b>Services offered by DTM Electrotechnical Inc;</b>
+                    <li>Pre-sales / post-sales engineering services</li>
+                    <li>Preparation of Implementation Projects</li>
+                    <li>Installation Supervision</li>
+                    <li>Short delivery times</li>
+                    {% endif %}
                 </ul>
             </div>
             <div class="col-md-4  col-sm-12">
@@ -64,8 +86,13 @@
                         <img src="../static/img/dtm-hizmetler.jpg" alt="">
                     </div>
                     <h3 class="align-self-center text-uppercase">{{ translation[13] }}</h3>
-                    <p>Örnek referanslarımızı inceleyiniz. Detaylı bilgi için lütfen bizi arayınız.</p>
-                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">Referanslar</button>
+                    <p>{% if session['language'] == 0 %}
+                        Örnek referanslarımızı inceleyiniz. Detaylı bilgi için lütfen bizi arayınız.
+                        {% else %}
+                        Check out some of our references. Please call us for detailed information.
+                        {% endif %}</p>
+                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">{{ translation[13]
+                        }}</button>
                 </div>
 
             </div>
