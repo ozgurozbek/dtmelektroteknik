@@ -13,7 +13,7 @@ translations = [
     ["eng","homepage","corporate",
     "DTM Electrotechnical Inc. has been providing service with busbar production from 25A to 6300A with its experienced staff since 2000. Our mission is to ensure customer satisfaction in the document and certificate standards we have, to produce busbar systems in the best way in Turkey and abroad, and to to provide reliable and quality service in their systems."
     ,"products"," Please visit this section for information about Busbar Systems between 25A - 6300A, produced in accordance with standards and high quality"
-    ,"lIGHTNING","LOW","MEDIUM","HIGH","services","Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş. için çok önemlidir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta impedit, optio similique esse nemo provident temporibus officia sed illum tenetur labore, nobis quasi explicabo, cupiditate velit veniam sint veritatis!"
+    ,"lIGHTNING","LOW","MEDIUM","HIGH","SERVICES","Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş. için çok önemlidir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta impedit, optio similique esse nemo provident temporibus officia sed illum tenetur labore, nobis quasi explicabo, cupiditate velit veniam sint veritatis!"
     ,"Aluminum Case","",""
     ]
 ]
