@@ -4,8 +4,18 @@ app = Flask(__name__)
 app.secret_key = 'random string'
 
 translations = [
-    ["tur","anasayfa","kurumsal"],
-    ["eng","homepage","corporate"]
+    ["tur","anasayfa","kurumsal",
+    "DTM Elektroteknik A.Ş. 2000 yılından bu yana tecrübeli kadrosu ile 25A'den 6300A'e kadar busbar üretimi ile hizmet vermektedir. Misyonumuz sahip olduğumuz belge ve sertifika standartlarında müşteri memnuniyetini sağlamak, yurt içi ve dışında busbar sistemlerini en iyi şekilde üretmek ve busbar sistemlerinde güvenilir ve kaliteli hizmet sunmaktır."
+    ,"ürünler","25A - 6300A arası, yüksek kaliteli ve standartlara uygun üretilen Busbar Kanal Sistemleri hakkında bilgi almak için bu bölümü ziyaret ediniz."
+    ,"AYDINLATMA","ALÇAK","ORTA","YÜKSEK","hizmetler","Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş. için çok önemlidir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta impedit, optio similique esse nemo provident temporibus officia sed illum tenetur labore, nobis quasi explicabo, cupiditate velit veniam sint veritatis!"
+    ,"Alüminyum Kasa","",""
+    ],
+    ["eng","homepage","corporate",
+    "DTM Electrotechnical Inc. has been providing service with busbar production from 25A to 6300A with its experienced staff since 2000. Our mission is to ensure customer satisfaction in the document and certificate standards we have, to produce busbar systems in the best way in Turkey and abroad, and to to provide reliable and quality service in their systems."
+    ,"products"," Please visit this section for information about Busbar Systems between 25A - 6300A, produced in accordance with standards and high quality"
+    ,"lIGHTNING","LOW","MEDIUM","HIGH","services","Satış öncesi ve satış sonrası hizmetleri mükemmel bir düzeyde vermek, DTM Elektroteknik A.Ş. için çok önemlidir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat soluta impedit, optio similique esse nemo provident temporibus officia sed illum tenetur labore, nobis quasi explicabo, cupiditate velit veniam sint veritatis!"
+    ,"Aluminum Case","",""
+    ]
 ]
 
 # 0: Tur, 1: Eng
