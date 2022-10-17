@@ -4,8 +4,8 @@ app = Flask(__name__)
 app.secret_key = 'random string'
 
 translations = [
-    ["tur","anasayfa","kurumsal","Hakkımızda","ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK","ORTA","YÜKSEK","İletişim","Kullanım Alanları"],
-    ["eng","homepage","corporate","About Us","products","Our Products","lIGHTNING","LOW","MEDIUM","HIGH","Contact Us","Application Areas"]
+    ["tur","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ","İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş."],
+    ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER","Contact Us","Application Areas","Services","References","Certificates","Announcements","Fast Navigation","DTM Electrotechnical Inc."]
 ]
 # 0: Tur, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
