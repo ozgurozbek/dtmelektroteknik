@@ -55,41 +55,57 @@
                     {% else %}
                     Our busbar systems are produced with aluminum and copper busbars on sheet metal and aluminum bodies.
                     It is produced in accordance with international test and conformity certificates.<br><br>
-                    We are doing production using the latest technologies in a factory area of 10000 m² in Alemdağ-Çekmeköy
+                    We are doing production using the latest technologies in a factory area of 10000 m² in
+                    Alemdağ-Çekmeköy
                     {% endif %}
-                    
+
                 </p>
                 <br>
                 <h6><b>{% if session['language'] == 0 %}
-                    MİSYON VE VİZYON
-                    {% else %}
-                    MISSION & VISION
-                    {% endif %}</b></h6>
-                <p>
-                    <br><b>{% if session['language'] == 0 %}
-                        Misyonumuz
+                        MİSYON VE VİZYON
                         {% else %}
-                        Our Mission
-                        {% endif %}</b><br>DTM Elektroteknik San. ve Tic. A.Ş olarak
+                        MISSION & VISION
+                        {% endif %}</b></h6>
+                <p>
+                    <br><b>
+                        {% if session['language'] == 0 %}
+                        <br>DTM Elektroteknik San. ve Tic. A.Ş olarak
                     yurtiçinde yerli malı kullanımını artırmak,yurtdışında yerli mallarının güvenilirliğini ispat
                     etmek,ürün ve hizmetleri makul fiyatlarla üretmek amacıyla yüksek kalitede güvenilir bir imkan
                     sağlamaktır.<br><br>
+                        {% else %}
+                        <br>As DTM Electrotechnical Inc, it is our mission to increase the use of domestic goods at home, to
+                    prove the reliability of domestic goods abroad. To provide a reliable facility of high quality in
+                    order to produce products and services at reasonable prices.<br><br>
+                        {% endif %}
+                        </b>
+
+                    
 
                 </p>
                 <p>
                     <b>Vizyonumuz</b> <br> Elektrik sektöründe DTM Busbar olarak yurtiçi ve yurtdışında geniş pazar
-                    imkanı bulan,sektörel anlamda yenilikçi,akılcı ve sorumlu yaklaşımımızla gelecek yıllarda yerli ve
+                    imkanı bulan,sektörel anlamda yenilikçi, akılcı ve sorumlu yaklaşımımızla gelecek yıllarda yerli ve
                     yabancı müşterilerin tercih ettiği busbar üretiminde bir dünya şirketi olmak ve sahip olduğumuz
                     yerel ve uluslararası bağlantıları genişletmek. Busbar sistemlerinde yenilikçi ve öncü bir şirket
                     olmak.
                 </p><br>
                 <ul>
+                    {% if session['language'] == 0 %}
                     <b>KALİTE BELGELERİ</b>
                     <li>ISO 9001 Kalite Belgesi</li>
                     <li>TSE Belgesi</li>
                     <li>LOVAG Sertifikaları</li>
                     <li>IPH Test Belgeleri</li>
                     <li>ASTA Sertifikaları</li>
+                    {% else %}
+                    <b>QUALITY CERTIFICATES</b>
+                    <li>ISO 9001 Quality Certificate</li>
+                    <li>TSE Certificate</li>
+                    <li>LOVAG Certificates </li>
+                    <li>IPH Test Documentation</li>
+                    <li>ASTA Certificates</li>
+                    {% endif %}
                 </ul>
             </div>
             <div class="col-md-4  col-sm-12">
@@ -97,14 +113,22 @@
                     <div class="cards-inner ">
                         <img src="../static/img/dtm-ik.jpg" alt="">
                     </div>
-                    <h3 class="align-self-center">İNSAN KAYNAKLARI</h3>
+                    <h3 class="align-self-center">{% if session['language'] == 0 %}
+                        İNSAN KAYNAKLARI
+                        {% else %}
+                        HUMAN RESOURCES
+                        {% endif %}</h3>
                     <p>İK ön-başvuru formunu eksiksiz doldurarak bize gönderebilirsiniz. İnsan Kaynakları Departmanı'mız
                         ihtiyaç duyduğu taktirde size geridönüş yapacaktır.</p>
                     <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">İK BAŞVURU FORMU</button>
 
                 </div>
                 <div id="phonenmbr" class=" card">
-                    <h3>Bize Ulaşın</h3>
+                    <h3>{% if session['language'] == 0 %}
+                        Bize Ulaşın
+                        {% else %}
+                        Contact Us
+                        {% endif %}</h3>
                     <p>(0216) 429 51 74 (pbx) &nbsp;&nbsp;<a href="tel:+902164295174">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -115,7 +139,12 @@
                         </a> </p>
                     <br>
 
-                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">İLETİŞİM BİLGİLERİ</button>
+                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">{% if session['language'] ==
+                        0 %}
+                        İLETİŞİM BİLGİLERİ
+                        {% else %}
+                        CONTACT INFO
+                        {% endif %}</button>
                 </div>
             </div>
         </div>
