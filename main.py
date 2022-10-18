@@ -9,7 +9,7 @@ translations = [
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
     ,"Contact Us","Application Areas","Services","References","Certificates","Announcements","Fast Navigation","DTM Electrotechnical Inc."]
 ]
-# 0: Tur, 1: Eng
+# 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
 def set_lang():
     if request.method == 'POST':

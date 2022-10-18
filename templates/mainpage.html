@@ -10,7 +10,11 @@
 <body>
   <section class="hero">
     <div class="hero-inner">
-      <h1>DTM Elektroteknik A.Ş.</h1>
+      <h1>{% if session['language'] == 0 %}
+        DTM Elektroteknik A.Ş.
+        {% else %}
+        DTM Electrotechnical Inc.
+        {% endif %}</h1>
       <h2>{{ translation[1] }}</h2>
       <h2>{{ translation[2] }}</h2>
       <div class="row">
@@ -22,6 +26,14 @@
         </div>
         <div class="col">
           <a href="/iletisim" class="btn">{{ translation[10] }}</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i></i>
+        </div>
+        <div class="col">
+
         </div>
       </div>
     </div>
@@ -221,7 +233,7 @@
                 {% else %}
                 Shopping Malls
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-datacenter.jpg" class="d-block w-100" alt="">
@@ -230,7 +242,7 @@
                 {% else %}
                 Data Centers
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-hastane.jpg" class="d-block w-100" alt="">
@@ -239,7 +251,7 @@
                 {% else %}
                 Hospitals
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-sanayi.jpg" class="d-block w-100" alt="">
@@ -248,7 +260,7 @@
                 {% else %}
                 Industrial Facilities
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-yuksek-bina.jpg" class="d-block w-100" alt="">
@@ -257,7 +269,7 @@
                 {% else %}
                 High Buildings
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-havaalani.jpg" class="d-block w-100" alt="">
@@ -266,7 +278,7 @@
                 {% else %}
                 Airports
                 {% endif %}</h5>
-              <p class="">{{ translation[6] }}</p>
+              <p class="">{{ translation[11] }}</p>
             </div>
             <div class="carousel-item">
               <img src="../static/img/icon-uygulama-otel.jpg" class="d-block w-100" alt="">
