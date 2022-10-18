@@ -19,15 +19,6 @@ a:hover {
   margin: 0;
 }
 
-
-/* #navbarat h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 0;
-  font-weight: 300;
-  color: inherit;
-  padding: 50px;
-} */
 /* HERO */
 .hero {
   width: 100vw;
@@ -62,13 +53,13 @@ a:hover {
   font-size: 1.5em;
   border: 3px solid white;
   border-radius: 20px;
-  background-color: #c5281d6c;
+  background-color: #cc00009d;
 }
 
 .hero .btn:hover {
   font-weight: 600;
   scale: 1.2;
-  background-color: #FA5F55;
+  background-color: #cc0000;
 }
 
 /* NAVIGATION */

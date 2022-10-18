@@ -7,7 +7,7 @@ translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
     ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş."],
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
-    ,"Contact Us","Application Areas","Services","References","Certificates","Announcements","Fast Navigation","DTM Electrotechnical Inc."]
+    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc."]
 ]
 # 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])

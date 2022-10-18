@@ -3,15 +3,19 @@
 
 <head>
     {% include 'HEAD.html' %}
-    <title>Kurumsal | DTM ELEKTROTEKNİK A.Ş.</title>
+    <title>{{ translation[2] }} | {{ translation[17] }}</title>
 </head>
 
 <body>
     {% include 'nav.html' %}
     <div class="">
         <div id="kurumsal" class="parallax">
-            <h1>KURUMSAL</h1>
-            <p>Busbar Kanal Sistemleri Konusunda Büyük Tecrübe</p>
+            <h1 class="text-uppercase">{{ translation[2] }}</h1>
+            <p>{% if session['language'] == 0 %}
+                Busbar Kanal Sistemleri Konusunda Büyük Tecrübe
+                {% else %}
+                Great Expertise in Busbar Duct Systems
+                {% endif %}</p>
         </div>
     </div>
 
@@ -21,29 +25,56 @@
         <div class="row justify-content-around">
             <div id="maintext" class="col-md-7 col-sm-12">
                 <h3>
+                    {% if session['language'] == 0 %}
                     DTM ELEKTROTEKNİK A.Ş.
+                    {% else %}
+                    DTM ELECTROTECHNICAL INC
+                    {% endif %}
                 </h3>
                 <p>
                     <br><br>
-                    <b>HAKKIMIZDA</b> <br><br>
+                    <b>
+                        {{ translation[3] }}
+                    </b> <br><br>
+                    {% if session['language'] == 0 %}
                     DTM Elektroteknik San. ve Tic. A.Ş 1977 yılında pano ve termik röle üretmek için kurulmuştur. Bu
                     konuda tecrübeli ve deneyimli yöneticileri tarafından 25A 'den 6300A' e kadar busbar üretimini 2000
                     yılında bayi ve müşterilerinin hizmetine sunmuştur.<br>
+                    {% else %}
+                    DTM Elektroteknik San. ve Tic. A.Ş was established in 1977 to produce panels and thermal relays. in
+                    2000, Busbar production from 25A to 6300A by its experienced managers was offered to its dealers and
+                    customers.<br>
+                    {% endif %}
                 </p>
                 <p>
+                    {% if session['language'] == 0 %}
                     Busbar sistemlerimiz, saç ve alüminyum gövdeler üzerinde alüminyum ve bakır baralar ile üreterek
                     uluslararası test ve uygunluk belgelerine uygun üretilmektedir.<br><br>
                     Alemdağ-Çekmeköy 'de 10000 m² 'lik fabrika alanında en yeni teknolojileri kullanarak üretim
                     yapmaktayız.
+                    {% else %}
+                    Our busbar systems are produced with aluminum and copper busbars on sheet metal and aluminum bodies.
+                    It is produced in accordance with international test and conformity certificates.<br><br>
+                    We are doing production using the latest technologies in a factory area of 10000 m² in Alemdağ-Çekmeköy
+                    {% endif %}
+                    
                 </p>
                 <br>
-                <h6><b>MİSYON VE VİZYON</b></h6>
+                <h6><b>{% if session['language'] == 0 %}
+                    MİSYON VE VİZYON
+                    {% else %}
+                    MISSION & VISION
+                    {% endif %}</b></h6>
                 <p>
-                    <br><b>Misyonumuz</b><br>DTM Elektroteknik San. ve Tic. A.Ş olarak
+                    <br><b>{% if session['language'] == 0 %}
+                        Misyonumuz
+                        {% else %}
+                        Our Mission
+                        {% endif %}</b><br>DTM Elektroteknik San. ve Tic. A.Ş olarak
                     yurtiçinde yerli malı kullanımını artırmak,yurtdışında yerli mallarının güvenilirliğini ispat
                     etmek,ürün ve hizmetleri makul fiyatlarla üretmek amacıyla yüksek kalitede güvenilir bir imkan
                     sağlamaktır.<br><br>
-                
+
                 </p>
                 <p>
                     <b>Vizyonumuz</b> <br> Elektrik sektöründe DTM Busbar olarak yurtiçi ve yurtdışında geniş pazar
@@ -75,14 +106,14 @@
                 <div id="phonenmbr" class=" card">
                     <h3>Bize Ulaşın</h3>
                     <p>(0216) 429 51 74 (pbx) &nbsp;&nbsp;<a href="tel:+902164295174">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
-                            </path>
-                        </svg>
-                    </a> </p> 
-                     <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                </path>
+                            </svg>
+                        </a> </p>
+                    <br>
 
                     <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">İLETİŞİM BİLGİLERİ</button>
                 </div>
