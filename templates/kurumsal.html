@@ -84,11 +84,20 @@
 
                 </p>
                 <p>
+                    {% if session['language'] == 0 %}
                     <b>Vizyonumuz</b> <br> Elektrik sektöründe DTM Busbar olarak yurtiçi ve yurtdışında geniş pazar
                     imkanı bulan,sektörel anlamda yenilikçi, akılcı ve sorumlu yaklaşımımızla gelecek yıllarda yerli ve
                     yabancı müşterilerin tercih ettiği busbar üretiminde bir dünya şirketi olmak ve sahip olduğumuz
                     yerel ve uluslararası bağlantıları genişletmek. Busbar sistemlerinde yenilikçi ve öncü bir şirket
                     olmak.
+                        {% else %}
+                    <b>Our Vision</b> <br> Elektrik sektöründe DTM Busbar olarak yurtiçi ve yurtdışında geniş pazar
+                    imkanı bulan,sektörel anlamda yenilikçi, akılcı ve sorumlu yaklaşımımızla gelecek yıllarda yerli ve
+                    yabancı müşterilerin tercih ettiği busbar üretiminde bir dünya şirketi olmak ve sahip olduğumuz
+                    yerel ve uluslararası bağlantıları genişletmek. Busbar sistemlerinde yenilikçi ve öncü bir şirket
+                    olmak.
+                        {% endif %}
+                    
                 </p><br>
                 <ul>
                     {% if session['language'] == 0 %}
