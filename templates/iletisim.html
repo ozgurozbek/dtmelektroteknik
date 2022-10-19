@@ -3,7 +3,7 @@
 
 <head>
     {% include 'HEAD.html' %}
-    <title>İletişim | DTM ELEKTROTEKNİK A.Ş.</title>
+    <title>{{ translation[9] }} | {{ translation[17] }}</title>
 </head>
 
 <body>
@@ -17,11 +17,11 @@
     <div class="container">
         <div class="row justify-content-around">
             <form action="/send_mail" method="post" class="col-lg-8">
-                <label for="name">AD SOYAD</label><br>
+                <label for="name" class="text-uppercase">{{ translation[18] }}</label><br>
                 <input type="text" id="name" name="name"><br>
 
                 <label for="YourMessage">
-                    MESAJINIZ
+                    {{ translation[19] }}
                 </label><br>
                 <textarea id="YourMessage" name="yourmsg" rows="10" cols="100"></textarea>
                 <input type="submit" value="send">
