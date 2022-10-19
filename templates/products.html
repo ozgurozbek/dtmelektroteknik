@@ -3,20 +3,26 @@
 
 <head>
     {% include 'HEAD.html' %}
-    <title>Ürünler | DTM ELEKTROTEKNİK A.Ş.</title>
+    <title>{{ translation[4] }} | {{ translation[17] }}</title>
 </head>
 
 <body>
   {% include 'nav.html' %}
   </section>
     <div class="productshead">
-        <h2 id="exphead">ÜRÜNLER</h2><br><p id="exppar">Busbar Kanal Sistemleri</p>
+        <h2 id="exphead" class="text-uppercase">{{ translation[4] }}</h2><br><p id="exppar">{% if session['language'] == 0 %}
+          Busbar Kanal Sistemleri
+          {% else %}
+          Busbar Trunking Systems
+          {% endif %}</p>
         </div>
     <div class="container" id="productdisplay">
         <div class="row">
             <div id="product1" class="col-sm-12  col-md-6 pt-4"> 
-                <br><br><br><h2 class="align-self-center py-2">AB-E AYDINLATMA BUSBAR (25A - 63A)</h2>
-                    <ul >
+                <br><br><br>
+                {% if session['language'] == 0 %}
+                <h2 class="align-self-center py-2">AB-E AYDINLATMA BUSBAR (25A - 63A)</h2>
+                    <ul>
                         <li><b>Aydınlatma ve küçük güç için kullanılır.</b></li><br>
                         <li><b>Seri:</b> 25 Amp. 32 Amp. 40 Amp. 63 Amp.</li><br>
                         <li><b>Voltaj:</b> 600 V</li><br>
@@ -38,7 +44,34 @@
                             <li>Renkli fiş seçeneği</li>
                         </ul>
                     </ul>
-                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
+                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>AB-E ürün kataloğu indir</button>
+                {% else %}
+                <h2 class="align-self-center py-2">AB-E LIGHTNING BUSBAR (25A - 63A)</h2>
+                    <ul>
+                        <li><b>Used for lighting and small power.</b></li><br>
+                        <li><b>Series:</b> 25 Amp. 32 Amp. 40 Amp. 63 Amp.</li><br>
+                        <li><b>Voltage:</b> 600 V</li><br>
+                        <li><b>Conductor:</b> Copper</li><br>
+                        <li><b>Protection:</b> IP 55</li><br>
+                        <li><b>Case:</b> Galvanized</li><br>
+                        <li><b>Configuration</b>
+                            <ul>
+                                <li> 3P + N + PE (4P)</li>
+                                <li> 3P + N + PE + FE1 (5P)</li>
+                            </ul>
+                        </li>
+                        <br><li><b>Geçmelerde kilitli sistem</b></li><br>
+                        <li><b>Standard:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
+                        <li><b>Advantages:</b></li>
+                        <ul>
+                            <li>Quick and easy application</li>
+                            <li>Hiçbir parça ilavesi olmaksızın geçme sistemi</li>
+                            <li>Renkli fiş seçeneği</li>
+                        </ul>
+                    </ul>
+                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download AB-E Catalog</button>
+                {% endif %}
+                
             </div>
             <div class="col-sm-12  col-md-6">
               <br><br><br><div id="product1slides" class="carousel slide" data-bs-ride="carousel">
@@ -75,31 +108,60 @@
     <div class="container"  id="productdisplay">
         <div class="row">
             <div id="product2" class="col-sm-12  col-md-6 offset-md-0"> 
-              <br><br><br><h2  class="align-self-center py-2">SP-H ALÇAK GÜÇ BUSBAR (100A - 160A)</h2><br>
+              <br><br><br>
+              {% if session['language'] == 0 %}
+              <h2 class="align-self-center py-2">SP-H ALÇAK GÜÇ BUSBAR (100A - 160A)</h2><br>
+              <ul>
+                  <li><b>Bu sistem küçük güç dağıtım sistemlerinde ticarethaneler ve servis binaları vb. yerlerde
+                          kullanılmaktadır.</b></li><br>
+                  <li><b>Seri:</b> 100 Amp. - 160 Amp.</li><br>
+                  <li><b>Voltaj:</b> 690 V</li><br>
+                  <li><b>İletkenler:</b> Bakır veya Alüminyum, tüm boy kalay kaplı</li><br>
+                  <li><b>Kasa:</b> Galveniz veya isteğe göre paslanmaz</li><br>
+                  <li> <b>Konfigurasyon</b>
+                      <ul>
+                          <li> 3P + N + PE (4P)</li>
+                          <li> 3P + N + PE + FE1 (5P)</li>
+                      </ul>
+                  </li>
+                  <br><li><b>Standart:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
+                  <li><b>Avantajları:</b>
+                      <ul>
+                          <li>Hızlı, kolay montaj ekleri</li>
+                          <li>Geçmeli vidalı sistemle güvenli montaj çıkış kutuları alev yürütmeyen "V2" plastik
+                              malzemeden üretilmektedir.</li>
+                      </ul>
+                  </li>
+
+              </ul>
+                  <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>SP-H ürün kataloğu indir</button>
+          {% else %}
+          <h2 class="align-self-center py-2">SP-H LOW POWER BUSBAR (100A - 160A)</h2><br>
                 <ul>
-                    <li><b>Bu sistem küçük güç dağıtım sistemlerinde ticarethaneler ve servis binaları vb. yerlerde
-                            kullanılmaktadır.</b></li><br>
-                    <li><b>Seri:</b> 100 Amp. - 160 Amp.</li><br>
-                    <li><b>Voltaj:</b> 690 V</li><br>
-                    <li><b>İletkenler:</b> Bakır veya Alüminyum, tüm boy kalay kaplı</li><br>
-                    <li><b>Kasa:</b> Galveniz veya isteğe göre paslanmaz</li><br>
-                    <li> <b>Konfigurasyon</b>
+                    <li><b>This system is used in small power distribution systems such as commercial offices and service buildings etc.</b></li><br>
+                    <li><b>Series:</b> 100 Amp. - 160 Amp.</li><br>
+                    <li><b>Voltage:</b> 690 V</li><br>
+                    <li><b>Conductor:</b> Copper or Aluminum, tin coated all over</li><br>
+                    <li><b>Case:</b> Galvanized or stainless upon request</li><br>
+                    <li><b>Configuration</b>
                         <ul>
                             <li> 3P + N + PE (4P)</li>
                             <li> 3P + N + PE + FE1 (5P)</li>
                         </ul>
                     </li>
-                    <br><li><b>Standart:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
-                    <li><b>Avantajları:</b>
+                    <br><li><b>Standard:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
+                    <li><b>Advantages:</b>
                         <ul>
-                            <li>Hızlı, kolay montaj ekleri</li>
+                            <li>Fast, easy assembly</li>
                             <li>Geçmeli vidalı sistemle güvenli montaj çıkış kutuları alev yürütmeyen "V2" plastik
                                 malzemeden üretilmektedir.</li>
                         </ul>
                     </li>
 
                 </ul>
-                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
+                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download SP-H Catalog</button>
+          {% endif %}
+          
             </div>
             <div class="col-sm-12  col-md-6 ">
               <br><br><br><div id="product2slides" class="carousel slide" data-bs-ride="carousel">
@@ -135,7 +197,9 @@
     <div class="container"  id="productdisplay">
         <div class="row">
             <div id="product3" class="col-sm-12  col-md-6 offset-md-0"> 
-              <br><br><br><h2 class="align-self-center py-2">MP-H ORTA GÜÇ BUSBAR (160A - 600A)</h2><br>
+              <br><br><br>
+              {% if session['language'] == 0 %}
+              <h2 class="align-self-center py-2">MP-H ORTA GÜÇ BUSBAR (160A - 600A)</h2><br>
                     <ul >
                         <li><b>Bu sistem ticari merkezler, orta ölçekli sanayi tesisleri, yüksek binalar, data merkezleri vb. yerlerde kullanılır.</b></li><br>
                         <li><b>Seri:</b> 250 Amp. - 600 Amp.</li><br>
@@ -156,7 +220,32 @@
                             <li>Tek civata ile hızlı ek blok montajı</li>
                         </ul>
                     </ul>
-                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
+                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>MP-H ürün kataloğu indir</button>
+              {% else %}
+              <h2 class="align-self-center py-2">MP-H MEDIUM POWER BUSBAR (160A - 600A)</h2><br>
+                    <ul >
+                        <li><b>This system is used in places such as commercial centers, medium-sized industrial facilities, high-rise buildings, data centers etc.</b></li><br>
+                        <li><b>Series:</b> 250 Amp. - 600 Amp.</li><br>
+                        <li><b>Voltage:</b> 1000 V</li><br>
+                        <li><b>Conductor:</b>Copper or Aluminum, tin coated all over</li><br>
+                        <li><b>Protection:</b> IP 55</li><br>
+                        <li><b>Case:</b> Galvanized sheet or Aluminum</li><br>
+                        <li><b>Konfigurasyon</b>
+                            <ul>
+                                <li> 3P + N + PE (4P)</li>
+                                <li> 3P + N + PE + FE1 (5P)</li>
+                            </ul>
+                        </li>
+                        <br><li><b>Advantages:</b></li>
+                        <ul>
+                            <li>Quick and easy assembly</li>
+                            <li>Çıkış kutuları alev yürütmeyen "V2" plastik malzemeden üretilmektedir</li>
+                            <li>Fast additional block assembly with one screw</li>
+                        </ul>
+                    </ul>
+                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download MP-H Catalog</button>
+              {% endif %}
+              
             </div>
             <div class="col-sm-12  col-md-6 ">
               <br><br><br><div id="product3slides" class="carousel slide" data-bs-ride="carousel">
@@ -193,33 +282,65 @@
         
         <div class="row">
             <div id="product4" class="col-sm-12  col-md-6 offset-md-0"> 
-              <br><br><br><h2 class="align-self-center py-2">HP-K YÜKSEK GÜÇ BUSBAR (400A - 6300A)</h2><br>
-                    <ul >
-                        <li><b>Bu sistem yüksek binalarda, fabrikalarda, sanayi tesislerinde, pano trafo veya jeneratör aralarında, büyük güç isteyen her yerde kullanılmaktadır.</b></li><br>
-                        <li><b>Seri:</b> 400 Amp. - 6300 Amp.</li><br>
-                        <li><b>Voltaj:</b> 1000 V</li><br>
-                        <li><b>İletkenler:</b> Alüminyum veya bakır, boydan boya epoxy kaplı ve ek yerleri kalay kaplı, istek üzerine ek yerleri gümüş kaplama</li><br>
-                        <li><b>Koruma Derecesi:</b> IP 55 - Opsiyonel IP 65</li><br>
-                        <li><b>Kasa:</b> Alüminyum</li><br>
-                        <li> <b>Konfigurasyon</b>
-                            <ul>
-                                <li> 3P + N + PE (4P)</li>
-                                <li> 3P + N + PE + FE1 (5P)</li>
-                                <li> 3P + N + PE + FE2 (5P)</li>
-                                <li> 3P + 2N + PE (5P)</li>
-                            </ul>
-                        </li>
-                        <br><li><b>Standart:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
-                        <li><b>Avantajları:</b></li>
-                        <ul>
-                            <li>Hızlı ve kolay montaj</li>
-                            <li>Çıkış kutuları alev yürütmeyen "V2" plastik malzemeden üretilmektedir</li>
-                            <li>Minimize edilmiş voltaj düşümü</li>
-                            <li>Kompak yapısı ile az yer kaplar</li>
-                            <li>Kompak yapısı ile iletkenler ve gövde arasında hava boşluğunun olmamasından sebep iletkenlerde oluşan ısı kolayca ortama transfer edilir</li>
-                        </ul>
-                    </ul>
-                    <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Ürün kataloğu indir</button>
+              <br><br><br>
+              {% if session['language'] == 0 %}
+              <h2 class="align-self-center py-2">HP-K YÜKSEK GÜÇ BUSBAR (400A - 6300A)</h2><br>
+              <ul >
+                  <li><b>Bu sistem yüksek binalarda, fabrikalarda, sanayi tesislerinde, pano trafo veya jeneratör aralarında, büyük güç isteyen her yerde kullanılmaktadır.</b></li><br>
+                  <li><b>Seri:</b> 400 Amp. - 6300 Amp.</li><br>
+                  <li><b>Voltaj:</b> 1000 V</li><br>
+                  <li><b>İletkenler:</b> Alüminyum veya bakır, boydan boya epoxy kaplı ve ek yerleri kalay kaplı, istek üzerine ek yerleri gümüş kaplama</li><br>
+                  <li><b>Koruma Derecesi:</b> IP 55 - Opsiyonel IP 65</li><br>
+                  <li><b>Kasa:</b> Alüminyum</li><br>
+                  <li> <b>Konfigurasyon</b>
+                      <ul>
+                          <li> 3P + N + PE (4P)</li>
+                          <li> 3P + N + PE + FE1 (5P)</li>
+                          <li> 3P + N + PE + FE2 (5P)</li>
+                          <li> 3P + 2N + PE (5P)</li>
+                      </ul>
+                  </li>
+                  <br><li><b>Standart:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
+                  <li><b>Avantajları:</b></li>
+                  <ul>
+                      <li>Hızlı ve kolay montaj</li>
+                      <li>Çıkış kutuları alev yürütmeyen "V2" plastik malzemeden üretilmektedir</li>
+                      <li>Minimize edilmiş voltaj düşümü</li>
+                      <li>Kompak yapısı ile az yer kaplar</li>
+                      <li>Kompak yapısı ile iletkenler ve gövde arasında hava boşluğunun olmamasından sebep iletkenlerde oluşan ısı kolayca ortama transfer edilir</li>
+                  </ul>
+              </ul>
+              <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>HP-K ürün kataloğu indir</button>
+                        {% else %}
+              <h2 class="align-self-center py-2">HP-K HIGH POWER BUSBAR (400A - 6300A)</h2><br>
+              <ul >
+                  <li><b>This system is used in tall buildings, factories, industrial facilities, between panel transformers or generators, wherever high power is required.</b></li><br>
+                  <li><b>Series:</b> 400 Amp. - 6300 Amp.</li><br>
+                  <li><b>Voltage:</b> 1000 V</li><br>
+                  <li><b>Conductor:</b> Aluminum or copper, epoxy coated throughout and tin-plated joints, silver-plated joints on request</li><br>
+                  <li><b>Protection:</b> IP 55 - Optional IP 65</li><br>
+                  <li><b>Case:</b> Aluminum</li><br>
+                  <li> <b>Configuration</b>
+                       <ul>
+                           <li> 3P + N + PE (4P)</li>
+                          <li> 3P + N + PE + FE1 (5P)</li>
+                           <li> 3P + N + PE + FE2 (5P)</li>
+                           <li> 3P + 2N + PE (5P)</li>
+                       </ul>
+                   </li>
+                   <br><li><b>Standard:</b> TS EN 61439-1/6 , IEC 61439-1/6</li><br>
+                   <li><b>Advantages:</b></li>
+                   <ul>
+                       <li>Fast and easy assembly</li>
+                       <li>Çıkış kutuları alev yürütmeyen "V2" plastik malzemeden üretilmektedir</li>
+                       <li>Minimized voltage drops</li>
+                      <li>Takes up little space with its compact structure</li>
+                      <li>With its compact structure, the heat generated in the conductors is easily transferred to the environment due to the absence of an air gap between the conductors and the body.</li>
+                   </ul>
+              </ul>
+              <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download HP-K Catalog</button>
+                        {% endif %}
+                        
             </div>
             <div class="col-sm-12  col-md-6 ">
               <br><br><br><div id="product4slides" class="carousel slide" data-bs-ride="carousel">

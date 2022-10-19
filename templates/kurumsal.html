@@ -70,17 +70,19 @@
                     <br><b>
                         {% if session['language'] == 0 %}
                         <br>DTM Elektroteknik San. ve Tic. A.Ş olarak
-                    yurtiçinde yerli malı kullanımını artırmak,yurtdışında yerli mallarının güvenilirliğini ispat
-                    etmek,ürün ve hizmetleri makul fiyatlarla üretmek amacıyla yüksek kalitede güvenilir bir imkan
-                    sağlamaktır.<br><br>
+                        yurtiçinde yerli malı kullanımını artırmak,yurtdışında yerli mallarının güvenilirliğini ispat
+                        etmek,ürün ve hizmetleri makul fiyatlarla üretmek amacıyla yüksek kalitede güvenilir bir imkan
+                        sağlamaktır.<br><br>
                         {% else %}
-                        <br>As DTM Electrotechnical Inc, it is our mission to increase the use of domestic goods at home, to
-                    prove the reliability of domestic goods abroad. To provide a reliable facility of high quality in
-                    order to produce products and services at reasonable prices.<br><br>
+                        <br>As DTM Electrotechnical Inc, it is our mission to increase the use of domestic goods at
+                        home, to
+                        prove the reliability of domestic goods abroad. To provide a reliable facility of high quality
+                        in
+                        order to produce products and services at reasonable prices.<br><br>
                         {% endif %}
-                        </b>
+                    </b>
 
-                    
+
 
                 </p>
                 <p>
@@ -90,14 +92,14 @@
                     yabancı müşterilerin tercih ettiği busbar üretiminde bir dünya şirketi olmak ve sahip olduğumuz
                     yerel ve uluslararası bağlantıları genişletmek. Busbar sistemlerinde yenilikçi ve öncü bir şirket
                     olmak.
-                        {% else %}
-                    <b>Our Vision</b> <br> Elektrik sektöründe DTM Busbar olarak yurtiçi ve yurtdışında geniş pazar
-                    imkanı bulan,sektörel anlamda yenilikçi, akılcı ve sorumlu yaklaşımımızla gelecek yıllarda yerli ve
-                    yabancı müşterilerin tercih ettiği busbar üretiminde bir dünya şirketi olmak ve sahip olduğumuz
-                    yerel ve uluslararası bağlantıları genişletmek. Busbar sistemlerinde yenilikçi ve öncü bir şirket
-                    olmak.
-                        {% endif %}
-                    
+                    {% else %}
+                    <b>Our Vision</b> <br> As DTM Busbar in the electricity sector, we aim to become a global company in
+                    the production of busbars preferred by domestic and foreign customers in the coming years, with our
+                    innovative, rational and responsible approach, which finds wide market opportunities in the domestic
+                    and abroad, and to expand our local and international connections. To be an innovative and
+                    pioneering company in busbar systems.
+                    {% endif %}
+
                 </p><br>
                 <ul>
                     {% if session['language'] == 0 %}
@@ -127,9 +129,20 @@
                         {% else %}
                         HUMAN RESOURCES
                         {% endif %}</h3>
-                    <p>İK ön-başvuru formunu eksiksiz doldurarak bize gönderebilirsiniz. İnsan Kaynakları Departmanı'mız
-                        ihtiyaç duyduğu taktirde size geridönüş yapacaktır.</p>
-                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">İK BAŞVURU FORMU</button>
+                    <p>{% if session['language'] == 0 %}
+                        İK ön-başvuru formunu eksiksiz doldurarak bize gönderebilirsiniz. İnsan Kaynakları
+                        Departmanı'mız
+                        ihtiyaç duyduğu taktirde size geridönüş yapacaktır.
+                        {% else %}
+                        You can fill in the HR pre-application form and send it to us. Our Human Resources Department
+                        will get back to you if needed.
+                        {% endif %}</p>
+                    <button id="sidecardbutton" type="button" class="btn btn-danger btn-sm">{% if session['language'] ==
+                        0 %}
+                        İK BAŞVURU FORMU
+                        {% else %}
+                        HR APPLICATION FORM
+                        {% endif %}</button>
 
                 </div>
                 <div id="phonenmbr" class=" card">
