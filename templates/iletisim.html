@@ -27,8 +27,13 @@
                 <input type="submit" value="send">
             </form>
             <div id="adresses" class="card col-lg-4">
+                {% if session['language'] == 0 %}
                 <h2>Adres Bilgileri</h2>
                 <h4>DTM ELEKTROTEKNİK A.Ş.</h4>
+                  {% else %}
+                <h2>Adress Information</h2>
+                <h4>DTM ELECTROTECHNICAL INC</h4>
+                  {% endif %}
                 <br>
                 <p>Çatalmeşe Mah.<br>Sultansuyu Cad. No:129<br>
                     34794 Alemdağ-Çekmeköy<br>İSTANBUL</p>
@@ -43,16 +48,20 @@
                 <p><b>Fax:</b>&nbsp;(0216) 429 47 88</p>
                 <p><b>Email:</b>&nbsp; <a href="mailto:info@dtmbusbar.com">info@dtmbusbar.com</a></p>
                 <br><br>
-                <p><b>Yurt İçi Satış:</b><br>Bülent TOKMAK<br><a
+                <p><b>{% if session['language'] == 0 %}
+                    Yurt İçi Satış:
+                    {% else %}
+                    Domestic Sales:
+                    {% endif %}</b><br>Bülent TOKMAK<br><a
                         href="mailto:bulent.tokmak@dtmbusbar.com">bulent.tokmak@dtmbusbar.com</a></p><br><br>
-                <p><b>KAHRAMANMARAŞ BÖLGE BAYİ</b><br>ATEM TEKSTİL GIDA ELEKTRİK<br>PAZARLAMA SAN. VE TİC. LTD.
-                    ŞTİ.<br><br><b>Adres:&nbsp;</b>Akçakoyunlu Mah.<br>Bayazıtlı Bul. No:9 Onikişubat<br> KAHRAMANMARAŞ
+                <p><b>KAHRAMANMARAŞ {{ translation[19] }}</b><br>ATEM TEKSTİL GIDA ELEKTRİK<br>PAZARLAMA SAN. VE TİC. LTD.
+                    ŞTİ.<br><br><b>{{ translation[20] }}:&nbsp;</b>Akçakoyunlu Mah.<br>Bayazıtlı Bul. No:9 Onikişubat<br> KAHRAMANMARAŞ
                     <br><b>TEL:&nbsp;</b>(0531) 286 10 11<br><a href="http://www.atem.com.tr"
                         target="_blank">www.atem.com.tr</a><br><a
                         href="mailto:info@atemelektrik.com">info@atemelektrik.com</a>
                 </p><br><br>
-                <p><b>ADANA BÖLGE BAYİ</b><br>MEGATEKS MAKİNA ENERJİ<br>SAN. VE TİC. LTD.
-                    ŞTİ.<br><br><b>Adres:&nbsp;</b>Yeşiloba Mah 46031<br>Sokak Yeni Metal San. Sit. No:<br>37/A SEYHAN /
+                <p><b>ADANA {{ translation[19] }}</b><br>MEGATEKS MAKİNA ENERJİ<br>SAN. VE TİC. LTD.
+                    ŞTİ.<br><br><b>{{ translation[20] }}:&nbsp;</b>Yeşiloba Mah 46031<br>Sokak Yeni Metal San. Sit. No:<br>37/A SEYHAN /
                     ADANA
                     <br><b>TEL:</b>&nbsp; (0322) 457 72 56<br><a href="http://www.megateksmakine.com"
                         target="_blank">www.megateksmakine.com</a><br><a

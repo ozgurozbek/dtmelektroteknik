@@ -6,10 +6,10 @@ app.secret_key = 'random string'
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
     ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Ad Soyad","Mesajınız"
-    ],
+    ,"BÖLGE BAYİ","Adres"],
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
     ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name Surname","Your Message"
-    ]
+    ,"REGIONAL DEALER","Adress"]
 ]
 # 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
@@ -22,7 +22,7 @@ def get_lang():
     try:
         if 'language' not in session:  # if session does not contain a language variable, if it exists no need to manually re-add it on else.
             session["language"] = 1
-        
+       
         # hideous code - refactor
         if session['language'] == 0:
             return 0
@@ -47,7 +47,7 @@ def send_mail():
 def root():
     lang_id = get_lang()
     return render_template('mainpage.html', translation = translations[lang_id])
-    
+
 @app.route("/kurumsal")
 def page_kurumsal():
     lang_id = get_lang()
@@ -84,6 +84,5 @@ def page_haberler():
     return render_template('haberler.html', translation = translations[lang_id])
 
 
-  
 if __name__ == "__main__":
     app.run()
