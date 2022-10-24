@@ -94,9 +94,9 @@ a:hover {
  }
  .menu li:hover {
   background-color: #a0a0a0;
-  border-right:5px solid #FA5F55;
+  /* border-right:5px solid #FA5F55;
   border-bottom: 2px solid #FA5F55;
-  border-radius: 5px;
+  border-radius: 5px; */
   transition: 0.3s ease;
  }
  .menu li {
@@ -112,6 +112,7 @@ a:hover {
   display: none;
   border-radius: 8px;
   top: 35px;
+  left: 0px;
  }
 
  .dropdown li {
@@ -122,6 +123,15 @@ a:hover {
 
  .dropdown li:hover {
   background-color: #a0a0a0;
+ }
+ .dropdown li:hover > span {
+  position: absolute;
+  left: 5px;
+  width: 5px;
+  height: 30px;
+  border-right:5px solid #FA5F55;
+  border-bottom: 2px solid #FA5F55;
+  border-radius: 5px;
  }
  .services:hover .dropdown {
   display: block;

@@ -17,10 +17,10 @@
                     <a href="/products">{{ translation[4] }}</a>
                     <!-- DROPDOWN MENU -->
                     <ul class="dropdown">
-                        <li><a href="./products.html#product1">AB-E {{ translation[6] }} BUSBAR</a></li>
-                        <li><a href="./products.html#product2">SP-H {{ translation[7] }} BUSBAR</a></li>
-                        <li><a href="./products.html#product3">MP-H {{ translation[8] }} BUSBAR</a></li>
-                        <li><a href="./products.html#product4">HP-K {{ translation[9] }} BUSBAR</a></li>
+                        <li><span></span><a href="./products.html#product1">AB-E {{ translation[6] }} BUSBAR</a></li>
+                        <li><span></span><a href="./products.html#product2">SP-H {{ translation[7] }} BUSBAR</a></li>
+                        <li><span></span><a href="./products.html#product3">MP-H {{ translation[8] }} BUSBAR</a></li>
+                        <li><span></span><a href="./products.html#product4">HP-K {{ translation[9] }} BUSBAR</a></li>
                     </ul>
                 </li>
                 <li><a href="/hizmetler">{% if session['language'] == 0 %}
@@ -36,12 +36,7 @@
                     {% endif %}</a></li>
                 <li><a href="/haberler">{{ translation[15] }}</a></li>
                 <li><a href="/iletisim">{{ translation[10] }}</a></li>
-                <li> <i class="fa-solid fa-globe"></i>
-                    <ul class="dropdown">
-                        <li class="" id=""><form action="/set_lang" method="post"><input style="display: none;" type="text" name="langval" value="1"><button type="submit" style="color: black;">ENGLISH</button></form></li>
-                        <li class="" id=""><form action="/set_lang" method="post"><input style="display: none;" type="text" name="langval" value="0"><button type="submit" style="color: black;">TÜRKÇE</button></form></li>
-                    </ul>
-                </li>
+                <li><form action="/set_lang" method="post"><input hidden name="langval" value="{% if session['language'] == 0 %}1{% else %}0{% endif %}"></input><button type="submit"><img src="../static/img/flag-{% if session['language'] == 0 %}eng{% else %}tur{% endif %}.png"></button></form></li>
             </div>
         </ul>
     </nav>
