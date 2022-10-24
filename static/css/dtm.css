@@ -662,13 +662,22 @@ footer {
 #references .card {
   box-shadow: none;
   margin: 1rem;
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 14rem;
+  
 }
 
 #references .card:hover {
   box-shadow: 0 5px 5px #000000;
+<<<<<<< Updated upstream
   transition: all 0.3s ease;
+=======
+  height: 18rem;
+  z-index: 3;
+  margin-bottom: -5rem;
+
+
+>>>>>>> Stashed changes
 }
 
 #references .card .content {
@@ -682,16 +691,45 @@ footer {
   font-family: 'Lato', sans-serif;
 }
 
+<<<<<<< Updated upstream
+=======
+
+#references .card .content h4 {
+  visibility: hidden;
+}
+
+>>>>>>> Stashed changes
 #references .card .image {
   text-align: center;
+  
   padding-top: 1rem;
-
 }
 #references .card .image img{
-  max-width: 8rem;
-  max-height: 8rem;
+  max-width: 14rem;
+  max-height: 12rem;
 }
 
+<<<<<<< Updated upstream
+=======
+#references .card:hover .content h4 {
+  font-size: medium;
+  text-align: center;
+  padding: auto;
+  visibility: visible;
+  font-family: 'Lato', sans-serif;
+}
+
+#references .card:hover .image {
+
+  padding-top: 20%;
+  margin-top: 0;
+}
+#references .card:hover .image img {
+
+}
+
+
+>>>>>>> Stashed changes
 
 /* ILETISIM */
 
