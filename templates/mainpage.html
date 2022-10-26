@@ -15,11 +15,10 @@
         {% else %}
         DTM Electrotechnical Inc.
         {% endif %}</h1>
-      <h2>{{ translation[1] }}</h2>
-      <h2>{{ translation[2] }}</h2>
+
       <form action="/set_lang" method="post" >
         <input hidden name="langval" value="{% if session['language'] == 0 %}1{% else %}0{% endif %}"></input>
-        <button type="submit" id="switchlang">
+        <button type="submit" id="switchlang2">
             <img id="langimg" src="../static/img/flag-{% if session['language'] == 0 %}eng{% else %}tur{% endif %}.png">
         </button>
         </form>
@@ -32,14 +31,6 @@
         </div>
         <div class="col">
           <a href="/iletisim" class="btn">{{ translation[10] }}</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <i></i>
-        </div>
-        <div class="col">
-
         </div>
       </div>
     </div>
