@@ -8,28 +8,29 @@
 
 <body>
     {% include 'nav.html' %}
-<div class="mediumhead">
+    <div class="mediumhead">
         <h2 id="mediumexp" class="text-uppercase">{{ translation[15] }}</h2>
-        <br><p id="exppar">{% if session['language'] == 0 %}
-          Aktivitelerimiz ve  ile ilgili güncellemeler
-          {% else %}
-          Latest updates regarding our activities and 
-          {% endif %}</p>
-</div>
-<div class="container align-self-center">
-    <div class="row align-self-center">
-        <div id="news" class="col-sm-10 col-md-8 offset-sm-1 offset-md-0">
-            <h3 class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
-            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            
+        <br>
+        <p id="exppar">{% if session['language'] == 0 %}
+            ile ilgili güncellemeler
+            {% else %}
+            Latest updates regarding our
+            {% endif %}</p>
+    </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h3>Lorem ipsum dolor suscipit quae eos aliquam omnis facere.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, totam dolores!</p>
         </div>
-    <div class="col-sm-8 col-md-4 offset-md-0 offset-sm-2">
-            <img src="https://picsum.photos/200">
-    </div>
+        <div>
+            <img src="https://picsum.photos/800">
+        </div>
+        </div>
     </div>
 
-
-</div>
-<hr class="linebreak"></hr>
-{% include 'FOOT.html' %}
+    
+    <hr class="linebreak">
+    </hr>
+    {% include 'FOOT.html' %}
 </body>
