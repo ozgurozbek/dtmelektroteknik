@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    {% include 'HEAD.html' %}
+    <title>{{ translation[15] }}| {{ translation[17] }}</title>
+</head>
+
+<body>
+    {% include 'nav.html' %}
+    <div class="mediumhead">
+        <h2 id="mediumexp" class="text-uppercase">{{ translation[15] }}</h2>
+        <br><p id="exppar">{% if session['language'] == 0 %}
+          
+          {% else %}
+          
+          {% endif %}</p>
+    </div>
+    <div>
+        <div id="news" class="">
+            <h3 class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="https://picsum.photos/200">
+        </div>
+        
+
+        
+    </div>
+
+    {% include 'FOOT.html' %}
+</body>

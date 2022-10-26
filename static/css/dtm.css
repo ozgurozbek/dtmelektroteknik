@@ -588,7 +588,7 @@ a:hover {
 /* RESPONSIVE IMG GALLERY FOR PRODUCTS PAGE END */
 
 /*PRODUCTS PAGE TOP*/
-#exphead {
+#mediumexp {
   padding-top: 3%;
   padding-left: 4%;
   color: rgb(255, 255, 255);
@@ -601,7 +601,7 @@ a:hover {
   padding-bottom: 3%;
 }
 
-.productshead {
+.mediumhead {
   background-image: url("https://picsum.photos/1920/1080");
 }
 
@@ -810,3 +810,6 @@ footer {
 }
 #certification .cerc-alt h5 {padding-bottom: 1rem;}
 
+/* HABERLER */
+
+#news 
