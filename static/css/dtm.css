@@ -42,6 +42,7 @@ a:hover {
   width: inherit;
   position: inherit;
 }
+
 /* HERO */
 .hero {
   width: 100vw;
@@ -90,9 +91,11 @@ a:hover {
 .menu li {
   list-style: none;
 }
+
 .nav-links a {
   text-decoration: none;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -100,102 +103,121 @@ a:hover {
   background-color: #F5F5F5;
   color: #cc0000;
 
- }
- .nav-links a {
+}
+
+.nav-links a {
   color: #cc0000;
- }
- .logo {
+}
+
+.logo {
   font-size: 32px;
   z-index: 7;
   padding-left: 2rem;
- }
- .menu {
+}
+
+.menu {
   display: flex;
   gap: 1em;
   font-size: 18px;
- }
- .menu li:hover {
+}
+
+.menu li:hover {
   background-color: #a0a0a0;
   transition: 0.3s ease;
   z-index: 6;
- }
- .menu li {
+}
+
+.menu li {
   padding: 5px 14px;
- }
- .services {
-  position: relative; 
- }
- .dropdown {
+}
+
+.services {
+  position: relative;
+}
+
+.dropdown {
   background-color: #F5F5F5;
   padding: 0;
-  position: absolute; 
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 35px;
   left: 0px;
- }
+}
 
- .dropdown li {
+.dropdown li {
   padding: 0.5em;
   width: 16em;
   text-align: center;
- }
+}
 
- .dropdown li:hover {
+.dropdown li:hover {
   background-color: #a0a0a0;
- }
- .dropdown li:hover > span {
+}
+
+.dropdown li:hover>span {
   position: absolute;
   left: 5px;
   width: 5px;
   height: 30px;
-  border-right:5px solid #cc0000;
+  border-right: 5px solid #cc0000;
   border-bottom: 2px solid #cc0000;
   border-radius: 5px;
- }
- .services:hover .dropdown {
+}
+
+.services:hover .dropdown {
   display: block;
- }
- input[type=checkbox]{
+}
+
+input[type=checkbox] {
   display: none;
- } 
- .hamburger {
+}
+
+.hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
- }
- @media (max-width: 1236px) {
- .menu { 
-  display:none;
-  position: absolute;
-  background-color:#F5F5F5;
-  right: 0;
-  left: 0;
-  text-align: center;
- }
- .menu li:hover {
-  display: inline-block;
-  background-color:#a0a0a0;
-  transition: 0.3s ease;
- }
- .menu li + li {
-  margin-top: 12px;
- }
- input[type=checkbox]:checked ~ .menu{
-  display: block;
- }
- .hamburger {
-  display: block;
- }
- .dropdown {
-  left: 50%;
-  top: 30px;
-  transform: translateX(35%);
- }
- .dropdown li:hover {
-  background-color: #a0a0a0;
- }
- }
+}
+
+@media (max-width: 1236px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #a0a0a0;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #a0a0a0;
+  }
+}
+
 /* NAVBAR HOVER STUFF END */
 
 /*CARD HOVER*/
@@ -625,7 +647,8 @@ a:hover {
   height: 100vh;
 }
 
-#productdisplay .carousel-item img {align-self: center;
+#productdisplay .carousel-item img {
+  align-self: center;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -681,6 +704,7 @@ footer {
 #footerfooter {
   background-color: #504c4c;
 }
+
 #icons a {
   color: rgb(0, 0, 0, 0.5);
   font-size: large;
@@ -694,7 +718,7 @@ footer {
   margin: 1rem;
   width: 20rem;
   height: 14rem;
-  
+
 }
 
 #references .card:hover {
@@ -724,10 +748,11 @@ footer {
 
 #references .card .image {
   text-align: center;
-  
+
   padding-top: 1rem;
 }
-#references .card .image img{
+
+#references .card .image img {
   max-width: 14rem;
   max-height: 12rem;
 }
@@ -793,23 +818,31 @@ footer {
 
 /* SERTIFIKALAR */
 .cert1 {
-  height:auto; 
-  border-radius:10px; 
-  text-align:center; 
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
   margin-top: calc(4%+15px);
 }
+
 .cert2 {
   margin-top: 4%;
 }
+
 .cert2 h3 {
-  margin-left:15px; 
+  margin-left: 15px;
   border-bottom: 1px solid #ccc;
 }
+
 #certification .cerc-alt {
   margin-top: 2.5rem;
 }
-#certification .cerc-alt h5 {padding-bottom: 1rem;}
+
+#certification .cerc-alt h5 {
+  padding-bottom: 1rem;
+}
 
 /* HABERLER */
 
-#news 
+#news {
+  
+}
