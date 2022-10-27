@@ -12,25 +12,89 @@
         <h2 id="mediumexp" class="text-uppercase">{{ translation[15] }}</h2>
         <br>
         <p id="exppar">{% if session['language'] == 0 %}
-            ile ilgili güncellemeler
+            DTM Busbar ile ilgili güncellemeler
             {% else %}
-            Latest updates regarding our
+            Latest updates about DTM Busbar
             {% endif %}</p>
     </div>
     <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <h3>Lorem ipsum dolor suscipit quae eos aliquam omnis facere.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit totam dolores!</p>
-        </div>
-        <div>
-            <img src="https://picsum.photos/800">
-        </div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt iste quos nemo, eius atque
+            magni, ea pariatur blanditiis dolore quisquam debitis ut veniam itaque. Ullam praesentium unde iure nihil.
+
+        </h1>
+        <div class="row ">
+            
+            
+            <div id="newscard" class="flip-card col-lg-5">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>01.02.2022</h2>
+                        <img src="../static/img/news/display/2.jpg" alt="">
+                        
+                        <p>{% if session['language'] == 0 %}
+                            2022 Light + Building Fuarında DTM ELEKTROTEKNİK olarak en iyi şekilde tamamlamış bulunmaktayız. Standımızı ziyaret eden tüm ziyaretçi ve katılımcılara teşekkür ediyoruz.
+                            {% else %}
+                            As DTM ELEKTROTEKNİK, we have completed the 2022 Light + Building Fair in the best way. We would like to thank all visitors and participants who visited our stand.
+                            {% endif %}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="#" title="" class="btn btn-danger">{% if session['language'] == 0 %}
+                            Light + Building Fuarı
+                            {% else %}
+                            Light + Building Fair
+                            {% endif %}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newscard" class="flip-card col-lg-5">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>30.11.2021</h2>
+                        <img src="../static/img/news/display/1.jpg" alt="">
+                        <p>{% if session['language'] == 0 %}
+                            10-13 Kasım 2021 tarihleri arasında Tüyap Fuar ve Kongre Merkezi'nde WIN EURASIA 2021 fuarına katılım sağladık.
+                            {% else %}
+                            We participated in the WIN EURASIA 2021 fair at Tüyap Fair and Congress Center between 10-13 November 2021.
+                            {% endif %}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="#" title="" class="btn">{% if session['language'] == 0 %}
+                            WIN EURASIA 2021 
+                            {% else %}
+                            WIN EURASIA 2021 
+                            {% endif %}</a>
+                    </div>
+                </div>
+            </div>
+            <!--<div id="newscard" class="flip-card col-lg-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://picsum.photos/1600/900" alt="">
+                        <h2>DATE OR HEADER</h2>
+                        <p>{% if session['language'] == 0 %}
+                            FAIR EXP TR
+                            {% else %}
+                            FAIR EXP ENG
+                            {% endif %}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>{{ translation[22] }}</p>
+                        <a href="#" title="" class="btn btn-danger">{% if session['language'] == 0 %}
+                            FAIR NAME TR
+                            {% else %}
+                            FAIR NAME ENG
+                            {% endif %}</a>
+                    </div>
+                </div>
+            </div>
+            -->
+
+           
         </div>
     </div>
 
-    
-    <hr class="linebreak">
-    </hr>
+
+
     {% include 'FOOT.html' %}
 </body>

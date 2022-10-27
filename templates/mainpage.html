@@ -16,9 +16,9 @@
         DTM Electrotechnical Inc.
         {% endif %}</h1>
 
-      <form action="/set_lang" method="post" >
+        <form action="/set_lang" method="post" >
         <input hidden name="langval" value="{% if session['language'] == 0 %}1{% else %}0{% endif %}"></input>
-        <button type="submit" id="switchlang2">
+        <span class="ali" style="font-size: larger;">DİL??? &nbsp;</span><button type="submit" id="switchlang2">
             <img id="langimg" src="../static/img/flag-{% if session['language'] == 0 %}eng{% else %}tur{% endif %}.png">
         </button>
         </form>
