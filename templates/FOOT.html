@@ -1,89 +1,90 @@
-      <footer class="text-center text-lg-start ">
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-4">
-                <h6 class="text-uppercase fw-bold my-4">
-                  {% if session['language'] == 0 %}
-                  DTM Elektroteknik A.Ş.
-                  {% else %}
-                  DTM ELECTROTECHNICAL INC.
-                  {% endif %}
-                </h6>
-                <p>
-                  <br><br><br><br><br><br>
-                  © 2022 Copyright: {{ translation[17]}} <br>
-                  <a class="text-reset " href="">{% if session['language'] == 0 %}
-                    KVKK Aydınlatma Metni
-                    {% else %}
-                    KVKK Clarification Text
-                    {% endif %}</a><br>
-          <a class="text-reset " href="">{% if session['language'] == 0 %}
-            KVKK Veri Sorumlusuna Başvuru Formu
+<footer class="text-center text-lg-start ">
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-4">
+          <h6 class="text-uppercase fw-bold my-4">
+            {% if session['language'] == 0 %}
+            DTM Elektroteknik A.Ş.
             {% else %}
-            KVKK Contacting to Data Controller Form
-            {% endif %}</a>
-                </p>
-              </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
-                <h6 class="text-uppercase fw-bold my-4">
-                  {{ translation[4] }}
-                </h6>
-                <p>
-                  <a href="/products#product1" class="text-reset">AB-E {{ translation[6] }} BUSBAR <br>(25A-63A)</a>
-                </p>
-                <p>
-                  <a href="/products#product2" class="text-reset">SP-H {{ translation[7] }} BUSBAR <br>(100A-160A)</a>
-                </p>
-                <p>
-                  <a href="/products#product3" class="text-reset">MP-H {{ translation[8] }} BUSBAR (160A-600A)</a>
-                </p>
-                <p>
-                  <a href="/products#product4" class="text-reset">HP-K {{ translation[9] }} BUSBAR <br>(400A-6300A)</a>
-                </p>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-4">
-                <h6 class="text-uppercase fw-bold my-4">
-                  {% if session['language'] == 0 %}
-                  DTM Elektroteknik A.Ş.
-                  {% else %}
-                  DTM ELECTROTECHNICAL INC.
-                  {% endif %}
-                </h6>
-                <p>
-                  <a href="/iletisim" class="text-reset">{{ translation[10] }}</a>
-                </p>
-                <p>
-                  <a href="/products" class="text-reset">{{ translation[4] }}</a>
-                </p>
-                <p>
-                  <a href="/" class="text-reset">{{ translation[1] }}</a>
-                </p>
-                <p>
-                  <a href="/kurumsal" class="text-reset">{{ translation[2] }}</a>
-                </p>
-              </div>
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4">
-                <h6 class="text-uppercase fw-bold my-4">{{ translation[10] }}</h6>
-                <p><i class="fas fa-home me-3"></i> Çatalmeşe Mah. Sultansuyu Cad. No:129, 34794 Alemdağ - Çekmeköy, İSTANBUL - TÜRKİYE</p>
-                <p>
-                  <i class="fas fa-envelope me-3"></i>
-                  info@dtmbusbar.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> 0216 429 51 74</p>
-                <p><i class="fas fa-print me-3"></i> 0216 429 47 88</p>
-                <div id="icons">
-                  <span>
-                  <a href="">
-                    <i class="fa-brands fa-twitter fa-xl"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa-brands fa-facebook fa-xl"></i>
-                  </a>
-                  </span>
-                </div>
-              </div>
-            </div>
+            DTM ELECTROTECHNICAL INC.
+            {% endif %}
+          </h6>
+          <p>
+            <br><br><br><br><br><br>
+            © 2022 Copyright: {{ translation[17]}} <br>
+            <a class="text-reset " href="">{% if session['language'] == 0 %}
+              KVKK Aydınlatma Metni
+              {% else %}
+              KVKK Clarification Text
+              {% endif %}</a><br>
+            <a class="text-reset " href="">{% if session['language'] == 0 %}
+              KVKK Veri Sorumlusuna Başvuru Formu
+              {% else %}
+              KVKK Contacting to Data Controller Form
+              {% endif %}</a>
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
+          <h6 class="text-uppercase fw-bold my-4">
+            {{ translation[4] }}
+          </h6>
+          <p>
+            <a href="/products#product1" class="text-reset">AB-E {{ translation[6] }} BUSBAR <br>(25A-63A)</a>
+          </p>
+          <p>
+            <a href="/products#product2" class="text-reset">SP-H {{ translation[7] }} BUSBAR <br>(100A-160A)</a>
+          </p>
+          <p>
+            <a href="/products#product3" class="text-reset">MP-H {{ translation[8] }} BUSBAR (160A-600A)</a>
+          </p>
+          <p>
+            <a href="/products#product4" class="text-reset">HP-K {{ translation[9] }} BUSBAR <br>(400A-6300A)</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-4">
+          <h6 class="text-uppercase fw-bold my-4">
+            {% if session['language'] == 0 %}
+            DTM Elektroteknik A.Ş.
+            {% else %}
+            DTM ELECTROTECHNICAL INC.
+            {% endif %}
+          </h6>
+          <p>
+            <a href="/iletisim" class="text-reset">{{ translation[10] }}</a>
+          </p>
+          <p>
+            <a href="/products" class="text-reset">{{ translation[4] }}</a>
+          </p>
+          <p>
+            <a href="/" class="text-reset">{{ translation[1] }}</a>
+          </p>
+          <p>
+            <a href="/kurumsal" class="text-reset">{{ translation[2] }}</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4">
+          <h6 class="text-uppercase fw-bold my-4">{{ translation[10] }}</h6>
+          <p><i class="fas fa-home me-3"></i> Çatalmeşe Mah. Sultansuyu Cad. No:129, 34794 Alemdağ - Çekmeköy, İSTANBUL
+            - TÜRKİYE</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@dtmbusbar.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 0216 429 51 74</p>
+          <p><i class="fas fa-print me-3"></i> 0216 429 47 88</p>
+          <div id="icons">
+            <span>
+              <a href="">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </a>
+            </span>
           </div>
-        </section>
-      </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
