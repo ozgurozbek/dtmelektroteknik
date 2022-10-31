@@ -442,11 +442,11 @@ input[type=checkbox] {
 }
 
 .ac-container input:checked~article.ac-alk {
-  height: 120px;
+  height: 150px;
 }
 
 .ac-container input:checked~article.ac-izol {
-  height: 180px;
+  height: 210px;
 }
 
 .ac-container input:checked~article.ac-ilet {
@@ -454,7 +454,7 @@ input[type=checkbox] {
 }
 
 .ac-container input:checked~article.ac-uygl {
-  height: 234px;
+  height: 260px;
 }
 
 /* ACCORDION END*/
@@ -860,9 +860,9 @@ footer {
 }
 
 #newscard img {
-  padding-top: 1rem;
-  width: 15rem;
-  height: 12rem;
+  padding-top: 1px;
+  width: 20rem;
+  height: 14rem;
 }
 
 #newscard a {
@@ -910,6 +910,8 @@ footer {
 .flip-card-front {
   background-color: rgb(255, 255, 255);
   color: black;
+  border: 2px solid #cc000090;
+  overflow: hidden;
 }
 
 .flip-card-back {
@@ -918,4 +920,18 @@ footer {
   color: white;
   font-size: large;
   transform: rotateY(180deg);
+}
+
+.flip-card-front h2 {
+  font-style: italic;
+  font-weight: 500;
+  font-family: 'Lato' ,sans-serif;
+  background-color: #cc000090;
+  color: rgb(39, 39, 39);
+}
+
+.newsmain {
+  padding-top: 0 !important;
+  margin-left: auto;
+  margin-right: 0 !important;
 }

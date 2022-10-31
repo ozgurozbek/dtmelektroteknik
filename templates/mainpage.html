@@ -211,9 +211,27 @@
         </div>
       </section>
       <!-- ACCORDION COL END-->
-      <!-- PERCENTAGES-->
-      <div class="col-lg-4 col-md-4 col-sm-8 offset-sm-2 offset-md-0 col-xs-12 container">
-
+      <!-- NEWS-->
+      <div class="newsmain col-lg-4 col-md-4 col-sm-8 offset-sm-2 offset-md-0 col-xs-12 container">
+        
+          <a href="/haberler">
+            <div class="card-flyer align-self-center justify-content-center ">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="../static/img/icon-news.jpg" alt="" />
+                </div>
+                <div class="text-container">
+                  <h6 class="text-uppercase">{{ translation[15] }}</h6>
+                  <p>{% if session['language'] == 0 %}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio minima eum velit nam amet, exercitationem voluptatem vitae totam commodi repudiandae reiciendis accusamus placeat ex voluptatum nostrum saepe aliquid id?
+                    {% else %}
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse provident nisi error distinctio recusandae odio fugiat quae illum blanditiis atque delectus, aut expedita dolorum eius laborum repellat numquam explicabo ea.
+                    {% endif %}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        
       </div>
       <!-- OWL CAROUSEL START-->
       <div class="col-lg-4 col-md-4 col-sm-8 offset-sm-2 offset-md-0 col-xs-12 ">
