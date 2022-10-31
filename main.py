@@ -1,7 +1,71 @@
 from flask import Flask, render_template, session, request, redirect, url_for
-
+from flask_mail import Mail, Message
 app = Flask(__name__)
+
 app.secret_key = 'random string'
+
+app.config['MAIL_SERVER'] = ''
+app.config['MAIL_PORT'] = 465 #default 25, 465 is SSL friendly
+app.config['MAIL_USE_SSL']= True
+app.config['MAIL_USERNAME']= '' #mail adress 
+app.config['MAIL_PASSWORD']= 'password' #mail password 
+
+mail = Mail(app)
+
+def sendTestEmail():
+    msg = Message("Test", sender="testing@dtmbusbar.com",recipients=["info@dtmbusbar.com"])
+
+    msg.body = """
+    This is my python Email attempt. """
+
+    msg.html = """ 
+    <div><h5>Test145</h5></div><br>
+    <div><p>Test146</p><br><div>
+    <p>Test147</p>
+     """
+    mail.send(msg)
+
+def sendContactForm(result):
+    msg = Message("Contact Form from Testing",sender="testing@dtmbusbar.com",recipients=["info@dtmbusbar.com"])
+
+    msg.body = """ 
+    Merhaba,
+    You just received a contact form.
+
+    Name:{}
+    Email:{}
+    Message:{}
+
+    Saygılar,
+    Webmaster
+
+    
+    """.format(result['name'],result['email'],result['messagee'])
+
+    mail.send(msg)
+
+@app.route("/",methods=["GET","POST"])
+def contact():
+
+    if request.method == 'POST':
+        result = {}
+
+        result ['name'] = request.form['name']
+        result ['email'] = request.form['email'].replace(' ', '').lower()
+        result ['message'] = request.form['message']
+
+        sendContactForm(result)
+
+        return render_template('??.html', **locals())
+
+
+    return render_template('contact.html', **locals())
+
+
+
+
+
+
 
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
