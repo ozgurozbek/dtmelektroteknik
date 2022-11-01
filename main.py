@@ -57,10 +57,10 @@ def contact():
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
     ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
-    ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","","","",""],
+    ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","Proje Referanslarımızdan Örnekler","","",""],
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
     ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name","Message"
-    ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","","","",""]
+    ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","Some of our project references","","",""]
 ]
 # 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
