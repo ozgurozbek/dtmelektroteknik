@@ -7,26 +7,13 @@ app.secret_key = 'random string'
 app.config['MAIL_SERVER'] = ''
 app.config['MAIL_PORT'] = 465 #default 25, 465 is SSL friendly
 app.config['MAIL_USE_SSL']= True
-app.config['MAIL_USERNAME']= '' #mail adress 
-app.config['MAIL_PASSWORD']= 'password' #mail password 
+app.config['MAIL_USERNAME']= 'batuhan.sahin@dtmbusbar.com' #mail adress 
+app.config['MAIL_PASSWORD']= 'DTM1907.,' #mail password 
 
 mail = Mail(app)
 
-def sendTestEmail():
-    msg = Message("Test", sender="testing@dtmbusbar.com",recipients=["info@dtmbusbar.com"])
-
-    msg.body = """
-    This is my python Email attempt. """
-
-    msg.html = """ 
-    <div><h5>Test145</h5></div><br>
-    <div><p>Test146</p><br><div>
-    <p>Test147</p>
-     """
-    mail.send(msg)
-
-def sendContactForm(result):
-    msg = Message("Contact Form from Testing",sender="testing@dtmbusbar.com",recipients=["info@dtmbusbar.com"])
+def sendContactForm(hermes):
+    msg = Message("Contact Form from Testing",sender="batuhan.sahin@dtmbusbar.com",recipients=["batuhannsahinn@hotmail.com"])
 
     msg.body = """ 
     Merhaba,
@@ -37,29 +24,29 @@ def sendContactForm(result):
     Message:{}
 
     Saygılar,
-    Webmaster
+    Websitesi
 
     
-    """.format(result['name'],result['email'],result['messagee'])
+    """.format(hermes['name'],hermes['email'],hermes['message'])
 
     mail.send(msg)
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/iletisim",methods=["GET","POST"])
 def contact():
 
     if request.method == 'POST':
-        result = {}
+        hermes = {}
 
-        result ['name'] = request.form['name']
-        result ['email'] = request.form['email'].replace(' ', '').lower()
-        result ['message'] = request.form['message']
+        hermes ['name'] = request.form['name']
+        hermes ['email'] = request.form['email'].replace(' ', '').lower()
+        hermes ['message'] = request.form['message']
 
-        sendContactForm(result)
+        sendContactForm(hermes)
 
-        return render_template('??.html', **locals())
+        return render_template('iletisim.html')
 
 
-    return render_template('contact.html', **locals())
+    return render_template('iletisim.html')
 
 
 
@@ -69,11 +56,11 @@ def contact():
 
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
-    ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Ad Soyad","Mesajınız"
-    ,"BÖLGE BAYİ","Adres","Devamını gör.."],
+    ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
+    ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","","","",""],
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
-    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name Surname","Your Message"
-    ,"REGIONAL DEALER","Adress","Read more.."]
+    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name","Message"
+    ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","","","",""]
 ]
 # 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
