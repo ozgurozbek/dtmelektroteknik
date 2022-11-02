@@ -51,9 +51,6 @@ def contact():
 
 
 
-
-
-
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
     ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
@@ -72,7 +69,7 @@ def set_lang():
 def get_lang():
     try:
         if 'language' not in session:  # if session does not contain a language variable, if it exists no need to manually re-add it on else.
-            session["language"] = 1
+            session["language"] = 0 #1
        
         # hideous code - refactor
         if session['language'] == 0:
@@ -80,7 +77,7 @@ def get_lang():
         elif session['language'] == 1:
             return 1
         else:
-            return 1 # failsafe for other languages, if need be.
+            return 0 # failsafe for other languages, if need be. (was 1)
     except Exception as e:
         print(e)
 
