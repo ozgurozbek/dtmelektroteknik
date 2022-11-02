@@ -17,25 +17,15 @@ def sendContactForm(args):
     msg.html = f"""You have a new message from <b>{args['name']}</b><br><a href="mailto:{args['email']}>{args['email']}</a><hr>{args['message']}"""
     mail.send(msg)
 
-@app.route("/iletisim",methods=["GET","POST"])
-def contact():
-
+@app.route("/post_contact", methods = ['POST'])
+def post_contact():
     if request.method == 'POST':
         hermes = {}
-
-        hermes ['name'] = request.form['name']
-        hermes ['email'] = request.form['email'].replace(' ', '').lower()
-        hermes ['message'] = request.form['message']
-
+        hermes['name'] = request.form['name']
+        hermes['email'] = request.form['email'].replace(' ', '').lower()
+        hermes['message'] = request.form['message']
         sendContactForm(hermes)
-
         return render_template('iletisim.html')
-
-
-    return render_template('iletisim.html')
-
-
-
 
 translations = [
     ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
