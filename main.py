@@ -12,6 +12,23 @@ app.config['MAIL_PASSWORD']= 'DTM1907.,' #mail password
 
 mail = Mail(app)
 
+###################
+#   TRANSLATION   #
+###################
+
+translations = [
+    ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
+    ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
+    ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","Proje Referanslarımızdan Örnekler","","",""],
+    ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
+    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name","Message"
+    ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","Some of our project references","","",""]
+]
+
+##################
+#    FUNCTION    #
+##################
+
 def sendContactForm(args):
     msg = Message("Message from Contact Form",sender="batuhan.sahin@dtmbusbar.com",recipients=["ENTER MAIL HERE ENTER MAIL HERE ENTER MAIL HERE ENTER MAIL HERE ENTER MAIL HERE"])
     msg.html = f"""You have a new message from <b>{args['name']}</b><br><a href="mailto:{args['email']}>{args['email']}</a><hr>{args['message']}"""
@@ -25,41 +42,32 @@ def get_lang():
     except Exception as e:
         print(e)
 
+##################
+# POST BEHAVIOUR #
+##################
+
 @app.route("/post_contact", methods = ['POST'])
 def post_contact():
     if request.method == 'POST':
-        hermes = {}
-        hermes['name'] = request.form['name']
-        hermes['email'] = request.form['email'].replace(' ', '').lower()
-        hermes['message'] = request.form['message']
-        sendContactForm(hermes)
-        return render_template('iletisim.html', translation = translations[lang_id])
+        try:
+            hermes = {}
+            hermes['name'] = request.form['name']
+            hermes['email'] = request.form['email'].replace(' ', '').lower()
+            hermes['message'] = request.form['message']
+            sendContactForm(hermes)
+            return render_template('iletisim.html', translation = translations[lang_id])
+        except Exception as e:
+            print(e)
 
-translations = [
-    ["tr","Ana Sayfa","Kurumsal","Hakkımızda","Ürünler","Ürünlerimiz","AYDINLATMA","ALÇAK GÜÇ","ORTA GÜÇ","YÜKSEK GÜÇ"
-    ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
-    ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","Proje Referanslarımızdan Örnekler","","",""],
-    ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
-    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name","Message"
-    ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","Some of our project references","","",""]
-]
-
-# 0: Tr, 1: Eng
 @app.route('/set_lang', methods = ['POST'])
 def set_lang():
     if request.method == 'POST':
         session["language"] = int(request.form['langval']) # make eng -> eng returns a '1'
     return redirect(url_for('root'))
 
-@app.route('/send_mail', methods = ['POST'])
-def send_mail():
-    try:
-        if request.method == 'POST':
-            your_message = request.form['yourmsg']
-            # try açıp mail at burada
-        return redirect(url_for('page_iletisim', stt = "Success!", bg = "#00FF00")) # BUNLAR KALMAYACAK - MAILER POST YAP
-    except Exception as e:
-        return redirect(url_for('page_iletisim', stt = e, bg = "#FF3300")) # BUNLAR KALMAYACAK - MAILER POST YAP
+##################
+# ROUTE HANDLING #
+##################
 
 @app.route("/")
 def root():
