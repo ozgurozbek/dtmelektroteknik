@@ -12,23 +12,9 @@ app.config['MAIL_PASSWORD']= 'DTM1907.,' #mail password
 
 mail = Mail(app)
 
-def sendContactForm(hermes):
-    msg = Message("Contact Form from Testing",sender="batuhan.sahin@dtmbusbar.com",recipients=["batuhannsahinn@hotmail.com"])
-
-    msg.body = """ 
-    Merhaba,
-    You just received a contact form.
-
-    Name:{}
-    Email:{}
-    Message:{}
-
-    Saygılar,
-    Websitesi
-
-    
-    """.format(hermes['name'],hermes['email'],hermes['message'])
-
+def sendContactForm(args):
+    msg = Message("Message from Contact Form",sender="batuhan.sahin@dtmbusbar.com",recipients=["ozgurozbek1@yandex.com"])
+    msg.html = f"""You have a new message from <b>{args['name']}</b><br><a href="mailto:{args['email']}>{args['email']}</a><hr>{args['message']}"""
     mail.send(msg)
 
 @app.route("/iletisim",methods=["GET","POST"])
