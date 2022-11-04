@@ -52,7 +52,8 @@ a:hover {
   align-items: center;
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/heroicbg.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+  background-color: #333;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -66,24 +67,20 @@ a:hover {
 }
 
 .hero .btn {
+  width: 55px; height: 55px;
   display: block;
-  width: 200px;
-  padding: 1em;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 10px;
+  margin: 0 auto 0 auto;
   color: white;
   text-decoration: none;
   font-size: 1.5em;
-  border: 3px solid white;
-  border-radius: 20px;
-  background-color: #cc00006c;
+  background-color: #ae1227;
+  transition: scale 100ms ease;
 }
 
 .hero .btn:hover {
-  font-weight: 600;
-  scale: 1.2;
-  background-color: #cc0000;
+  scale: 1.05;
+  background-color: #cf6666;
 }
 
 /* NAVIGATION */
