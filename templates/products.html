@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="{{ translation[0] }}">
 
 <head>
   {% include 'HEAD.html' %}
@@ -75,7 +75,7 @@
         {% endif %}
 
       </div>
-      <div class="col-sm-12  col-md-6">
+      <div class="col-sm-12  col-md-6 invisible">
         <br><br><br>
         <div id="product1slides" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -112,7 +112,7 @@
 
   <div class="container" id="productdisplay">
     <div class="row">
-      <div id="product2" class="col-sm-12  col-md-6 offset-md-0">
+      <div id="product2" class="col-sm-12  col-md-6 offset-md-0 ">
         <br><br><br><br><br><br>
         {% if session['language'] == 0 %}
         <h2 class="align-self-center py-2">SP-H ALÇAK GÜÇ BUSBAR (100A - 160A)</h2><br>
@@ -168,7 +168,7 @@
         <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download SP-H Catalog</button>
         {% endif %}
       </div>
-      <div class="col-sm-12  col-md-6 ">
+      <div class="col-sm-12  col-md-6 invisible">
         <br><br><br>
         <div id="product2slides" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -258,7 +258,7 @@
         <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download MP-H Catalog</button>
         {% endif %}
       </div>
-      <div class="col-sm-12  col-md-6 ">
+      <div class="col-sm-12  col-md-6 invisible">
         <br><br><br>
         <div id="product3slides" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -362,7 +362,7 @@
         <button type="button" class="btn btn-danger btn-sm btn-cata"><a href=""></a>Download HP-K Catalog</button>
         {% endif %}
       </div>
-      <div class="col-sm-12  col-md-6 ">
+      <div class="col-sm-12  col-md-6 invisible">
         <br><br><br>
         <div id="product4slides" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">

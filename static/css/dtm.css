@@ -532,15 +532,15 @@ input[type=checkbox] {
 
 /* TOP IMAGE W TEXT */
 #hizmetler {
-  background-image: url("https://wallpaperaccess.com/full/1145728.jpg");
+  background-image: url("../img/bg_red.png");
 }
 
 #kurumsal {
-  background-image: url("https://www.wallpaperbetter.com/wallpaper/489/691/756/shanghai-china-night-city-buildings-skyscrapers-lights-1080P-wallpaper-middle-size.jpg");
+  background-image: url("../img/bg_red.png");
 }
 
 #iletisim {
-  background-image: url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-600w-1605128917.jpg");
+  background-image: url("../img/bg_red.png");
 }
 
 .parallax {
@@ -621,7 +621,7 @@ input[type=checkbox] {
 }
 
 .mediumhead {
-  background-image: url("https://picsum.photos/1920/1080");
+  background-image: url("../img/bg_red.png");
 }
 
 .btn-cata {
@@ -750,7 +750,6 @@ footer {
 
 #references .card .image {
   text-align: center;
-
   padding-top: 1rem;
 }
 
@@ -896,8 +895,7 @@ footer {
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-
+  transform: rotateY(180deg)
 }
 
 .flip-card-front,

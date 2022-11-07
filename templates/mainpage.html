@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="{{ translation[0] }}">
 
 <head>
   {% include 'HEAD.html' %}
@@ -13,13 +13,13 @@
       <h1>{% if session['language'] == 0 %}
         DTM Elektroteknik A.Ş.
         {% else %}
-        DTM Electrotechnical Inc.
+        DTM Elektroteknik
         {% endif %}</h1>
 
       <form action="/set_lang" method="post">
         <input hidden name="langval" value="{% if session['language'] == 0 %}1{% else %}0{% endif %}"></input>
-        <span class="" style="font-size: larger;">DİL??? &nbsp;</span><button type="submit" id="switchlang2">
-          <img id="langimg" src="../static/img/flag-{% if session['language'] == 0 %}eng{% else %}tur{% endif %}.png">
+        <span class="" style="font-size: larger;"> &nbsp;</span><button type="submit" id="switchlang2">
+          <img id="langimg" src="../static/img/flag-{{ translation[0] }}.png">
         </button>
       </form>
       <div class="row">
@@ -57,7 +57,7 @@
                   memnuniyetini sağlamak, yurt içi ve dışında busbar sistemlerini en iyi şekilde üretmek ve busbar
                   sistemlerinde güvenilir ve kaliteli hizmet sunmaktır.
                   {% else %}
-                  DTM Electrotechnical Inc. has been providing service with busbar production from 25A to 6300A with its
+                  DTM Elektroteknik has been providing service with busbar production from 25A to 6300A with its
                   experienced staff since 2000. Our mission is to ensure customer satisfaction in the document and
                   certificate standards we have, to produce busbar systems in the best way in Turkey and abroad, and to
                   to provide reliable and quality service in their systems.

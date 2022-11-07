@@ -21,7 +21,7 @@ translations = [
     ,"İletişim","Kullanım Alanları","Hizmetler","Referanslar","Sertifikalar","Haberler","Hızlı Navigasyon","DTM Elektroteknik A.Ş.","Adınız","Mesajınız"
     ,"BÖLGE BAYİ","Adres","Devamını gör..","Adınızı Giriniz","Mesajınızı buraya yazabilirsiniz...","Gönder","Proje Referanslarımızdan Örnekler","","",""],
     ["eng","Homepage","Corporate","About Us","Products","Our Products","LIGHTNING","LOW POWER","MEDIUM POWER","HIGH POWER"
-    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Electrotechnical Inc.","Name","Message"
+    ,"Contact Us","Application Areas","Services","References","Certificates","News","Fast Navigation","DTM Elektroteknik","Name","Message"
     ,"REGIONAL DEALER","Adress","Read more..","John Doe","You can write your message here...","Send","Some of our project references","","",""]
 ]
 
