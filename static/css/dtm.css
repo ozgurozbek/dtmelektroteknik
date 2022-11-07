@@ -1,3 +1,7 @@
+:root {
+  --dtm-red: #f53240;
+}
+
 body {
   background-color: #e9e9e9;
   overflow-x: hidden;
@@ -8,39 +12,27 @@ ul {
 }
 
 a:hover {
-  color: #f53240;
+  color:var(--dtm-red);
 }
 
 #navbarat {
   background: #fff;
-  color: #f53240;
+  color:var(--dtm-red);
   font-family: 'Lato', sans-serif;
   padding: 0;
   margin: 0;
 }
 
 #switchlang {
-  height: 2em;
-  width: 2em;
   border: none;
   background-color: #e9e9e9;
   padding: 0 !important;
   background: none !important;
 }
 
-#switchlang2 {
-  height: 5em;
-  width: 5em;
-  border: none;
-  background-color: #e9e9e9;
-  padding: 0 !important;
-  background: none !important;
-}
-
-#langimg {
-  height: inherit;
-  width: inherit;
-  position: inherit;
+#switchlang > img {
+  height: 24px;
+  width: 24px;
 }
 
 /* HERO */
@@ -89,21 +81,20 @@ a:hover {
   list-style: none;
 }
 
-.nav-links a {
-  text-decoration: none;
+.navsection {
+  background-color: #F5F5F5;
+  align-items: center!important;
 }
 
 .navbar {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #F5F5F5;
-  color: #cc0000;
-
 }
 
 .nav-links a {
   color: #cc0000;
+  text-decoration: none;
+  padding: 5px 14px;
 }
 
 .logo {
@@ -113,19 +104,17 @@ a:hover {
 }
 
 .menu {
-  display: flex;
-  gap: 1em;
   font-size: 18px;
 }
 
-.menu li:hover {
-  background-color: #a0a0a0;
+.menu li:hover > a {
+  background-color: #ddd;
   transition: 0.3s ease;
   z-index: 6;
 }
 
 .menu li {
-  padding: 5px 14px;
+  display: inline-block;
 }
 
 .services {
@@ -176,7 +165,7 @@ input[type=checkbox] {
   user-select: none;
 }
 
-@media (max-width: 1236px) {
+@media (max-width: 992px) {
   .menu {
     display: none;
     position: absolute;
@@ -305,12 +294,12 @@ input[type=checkbox] {
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box p a {
-  color: #f53240;
+  color:var(--dtm-red);
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box p a:hover {
   font-weight: bold;
-  border-bottom: 1px solid #f53240;
+  border-bottom: 1px solidvar(--dtm-red);
 
 }
 
@@ -322,7 +311,7 @@ input[type=checkbox] {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  color: #f53240;
+  color:var(--dtm-red);
 }
 
 
@@ -377,7 +366,7 @@ input[type=checkbox] {
 .ac-container input:checked+label,
 .ac-container input:checked+label:hover {
   background: #97979779;
-  color: #f53240;
+  color:var(--dtm-red);
 
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 30px;
@@ -574,7 +563,7 @@ input[type=checkbox] {
 }
 
 #phonenmbr p {
-  color: #f53240;
+  color:var(--dtm-red);
   font-family: 'Lato', sans-serif;
   font-size: 28px;
   text-align: center;
