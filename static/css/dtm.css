@@ -227,29 +227,29 @@ input[type=checkbox] {
 }
 
 #cards_landscape_wrap-2 .card-flyer .image-box {
-  background: #ffffff;
+  background: white;
   overflow: hidden;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 #cards_landscape_wrap-2 .card-flyer .image-box img {
-  transition: all .9s ease;
-  -webkit-transition: all .9s ease;
-  -moz-transition: all .9s ease;
-  -o-transition: all .9s ease;
-  -ms-transition: all .9s ease;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
   width: 100%;
   height: 200px;
 }
 
 #cards_landscape_wrap-2 .card-flyer:hover .image-box img {
   opacity: 0.7;
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #cards_landscape_wrap-2 .card-flyer .text-box {
@@ -269,17 +269,12 @@ input[type=checkbox] {
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.50);
 }
 
 #cards_landscape_wrap-2 .card-flyer:hover {
   background: #fff;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.50);
   margin-top: 50px;
 }
 
