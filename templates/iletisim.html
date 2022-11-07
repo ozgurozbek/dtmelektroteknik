@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ translation[0] }}">
 
 <head>
     {% include 'HEAD.html' %}
@@ -16,28 +16,28 @@
     </div>
     <div class="container">
         <form class="" action="/post_contact" method="post">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="form-group">
                     <label for="name">{{ translation[18] }}</label>
                     <input class="form-control" type="text" name="name" placeholder="{{ translation[23] }}" required>
                 </div>
             </div>
         
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input class="form-control" type="email" name="email" placeholder="example@dtmbusbar.com" required>
                 </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="form-group">
                     <label for="message">{{ translation[19] }}</label>
                     <textarea class="form-control" name="message" rows="5" placeholder="{{ translation[24] }}" required></textarea>
                 </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <button type="submit" class="btn btn-danger">{{ translation[25] }}</button>
             </div> 
     </form>
